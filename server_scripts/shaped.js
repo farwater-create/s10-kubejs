@@ -22,8 +22,8 @@ ServerEvents.recipes(event => {
         "MWM",
         "MMM"  
       ], {
-        M: "#farwater:mushroom",
+        M: "#forge:mushroom",
         W: "minecraft:white_dye"
       }
-    ),
-}
+    )
+})
