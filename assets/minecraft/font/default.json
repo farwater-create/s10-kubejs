@@ -1,0 +1,11 @@
+{
+  "providers": [
+    {
+      "file": "farwater:font/mysticism.png",
+      "chars": ["\uE238"],
+      "height": 50,
+      "ascent": 35,
+      "type": "bitmap"
+    }
+  ]
+}
