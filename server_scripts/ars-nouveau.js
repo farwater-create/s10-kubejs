@@ -88,7 +88,7 @@ ServerEvents.recipes((event) => {
   );
 
   event.recipes.ars_nouveau.imbuement(
-    "ae2:damaged_budding_quartz", // input item
+    "ae2:flawed_budding_quartz", // input item
     "ae2:flawless_budding_quartz", // output
     10000, // source cost
     [

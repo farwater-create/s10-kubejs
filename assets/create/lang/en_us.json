@@ -1,0 +1,30 @@
+{
+	"block.create.amber_valve_handle": "Amber Valve Handle",
+	"block.create.aqua_valve_handle": "Aqua Valve Handle",
+	"block.create.beige_valve_handle": "Beige Valve Handle",
+	"block.create.coral_valve_handle": "Coral Valve Handle",
+	"block.create.forest_valve_handle": "Forest Valve Handle",
+    "block.create.ginger_valve_handle": "Ginger Valve Handle",
+    "block.create.indigo_valve_handle": "Indigo Valve Handle",
+    "block.create.maroon_valve_handle": "Maroon Valve Handle",
+    "block.create.mint_valve_handle": "Mint Valve Handle",
+    "block.create.navy_valve_handle": "Navy Valve Handle",
+    "block.create.olive_valve_handle": "Olive Valve Handle",
+    "block.create.rose_valve_handle": "Rose Valve Handle",
+    "block.create.slate_valve_handle": "Slate Valve Handle",
+    "block.create.tan_valve_handle": "Tan Valve Handle",
+    "block.create.teal_valve_handle": "Teal Valve Handle",
+    "block.create.verdant_valve_handle": "Verdant Valve Handle",
+	
+	"block.create.light_gray_nixie_tube": "Light Gray Nixie Tube",
+    "block.create.light_gray_sail": "Ash Sail",
+    "block.create.light_gray_seat": "Ash Seat",
+	"block.create.light_gray_toolbox": "Ash Toolbox",
+	"block.create.light_gray_valve_handle": "Ash Valve Handle",
+	
+	"block.create.light_blue_nixie_tube": "Sky Nixie Tube",
+    "block.create.light_blue_sail": "Sky Sail",
+    "block.create.light_blue_seat": "Sky Seat",
+	"block.create.light_blue_toolbox": "Sky Toolbox",
+	"block.create.light_blue_valve_handle": "Sky Valve Handle"
+}

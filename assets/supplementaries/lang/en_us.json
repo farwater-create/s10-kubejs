@@ -1,0 +1,11 @@
+{
+	"block.supplementaries.present_light_blue": "Sky Present",
+	"block.supplementaries.trapped_present_light_blue": "Trapped Sky Present",
+	"block.supplementaries.candle_holder_light_blue": "Sky Candle Holder",
+	"block.supplementaries.flag_light_blue": "Sky Flag",
+	
+	"block.supplementaries.present_light_gray": "Ash Present",
+	"block.supplementaries.trapped_present_light_gray": "Trapped Ash Present",
+	"block.supplementaries.candle_holder_light_gray": "Ash Candle Holder",
+	"block.supplementaries.flag_light_gray": "Ash Flag"
+}
