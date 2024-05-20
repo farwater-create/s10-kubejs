@@ -1,6 +1,4 @@
 StartupEvents.registry("item", (e) => {
-  e.create("runic_gold").texture("farwater:item/runic_gold");
-  e.create("incomplete_runic_gold").texture(
-    "farwater:item/incomplete_runic_gold"
-  );
+  e.create("farwater:runic_gold_sheet").glow(true);
+  e.create("farwater:incomplete_runic_gold_sheet");
 });
