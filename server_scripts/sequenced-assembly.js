@@ -6,46 +6,41 @@ ServerEvents.recipes((e) => {
       // begin
       Item.of("ae2:printed_silicon"),
       [
-        e.recipes.create.deploying(Item.of("ae2:printed_silicon"), [
-          Item.of("ae2:printed_silicon"),
-          Item.of("minecraft:redstone"),
-        ]),
-        e.custom({
-          type: "vintageimprovements:vibrating",
-          ingredients: [
-            {
-              item: "ae2:printed_silicon",
-            },
-          ],
-          results: [
-            {
-              item: "ae2:printed_silicon",
-            },
-          ],
-        }),
-        e.recipes.create.deploying(Item.of("ae2:printed_silicon"), [
-          Item.of("ae2:printed_silicon"),
-          Item.of("vintageimprovements:small_iron_spring"),
-        ]),
-        e.recipes.create.deploying(Item.of("ae2:printed_silicon"), [
-          Item.of("ae2:printed_silicon"),
-          Item.of("createaddition:electrum_wire"),
-        ]),
-        e.recipes.create.deploying(Item.of("ae2:printed_silicon"), [
-          Item.of("ae2:printed_silicon"),
-          Item.of("ae2:printed_calculation_processor"),
-        ]),
-        e.recipes.create.deploying(Item.of("ae2:printed_silicon"), [
-          Item.of("ae2:printed_silicon"),
-          Item.of("tfmg:screw"),
-        ]),
-        e.recipes.create.deploying(Item.of("ae2:printed_silicon"), [
-          Item.of("ae2:printed_silicon"),
-          Item.of("tfmg:screwdriver"),
-        ]),
+        e.recipes.create.deploying(
+          Item.of("createappliedkinetics:incomplete_calculation_processor"),
+          [
+            Item.of("createappliedkinetics:incomplete_calculation_processor"),
+            Item.of("ae2:printed_calculation_processor"),
+          ]
+        ),
+        e.recipes.create.deploying(
+          Item.of("createappliedkinetics:incomplete_calculation_processor"),
+          [
+            Item.of("createappliedkinetics:incomplete_calculation_processor"),
+            Item.of("vintageimprovements:small_iron_spring"),
+          ]
+        ),
+        e.recipes.create.deploying(
+          Item.of("createappliedkinetics:incomplete_calculation_processor"),
+          [
+            Item.of("createappliedkinetics:incomplete_calculation_processor"),
+            Item.of("createaddition:electrum_wire"),
+          ]
+        ),
+        e.recipes.create.deploying(
+          Item.of("createappliedkinetics:incomplete_calculation_processor"),
+          [
+            Item.of("createappliedkinetics:incomplete_calculation_processor"),
+            Item.of("tfmg:screw"),
+          ]
+        ),
+        e.recipes.create.pressing(
+          Item.of("createappliedkinetics:incomplete_calculation_processor"),
+          Item.of("createappliedkinetics:incomplete_calculation_processor")
+        ),
       ]
     )
-    .transitionalItem("ae2:printed_silicon")
+    .transitionalItem("createappliedkinetics:incomplete_calculation_processor")
     .loops(1);
 
   e.recipes.create
@@ -55,46 +50,41 @@ ServerEvents.recipes((e) => {
       // begin
       Item.of("ae2:printed_silicon"),
       [
-        e.recipes.create.deploying(Item.of("ae2:printed_silicon"), [
-          Item.of("ae2:printed_silicon"),
-          Item.of("minecraft:redstone"),
-        ]),
-        e.custom({
-          type: "vintageimprovements:vibrating",
-          ingredients: [
-            {
-              item: "ae2:printed_silicon",
-            },
-          ],
-          results: [
-            {
-              item: "ae2:printed_silicon",
-            },
-          ],
-        }),
-        e.recipes.create.deploying(Item.of("ae2:printed_silicon"), [
-          Item.of("ae2:printed_silicon"),
-          Item.of("vintageimprovements:small_copper_spring"),
-        ]),
-        e.recipes.create.deploying(Item.of("ae2:printed_silicon"), [
-          Item.of("ae2:printed_silicon"),
-          Item.of("createaddition:electrum_wire"),
-        ]),
-        e.recipes.create.deploying(Item.of("ae2:printed_silicon"), [
-          Item.of("ae2:printed_silicon"),
-          Item.of("ae2:printed_logic_processor"),
-        ]),
-        e.recipes.create.deploying(Item.of("ae2:printed_silicon"), [
-          Item.of("ae2:printed_silicon"),
-          Item.of("tfmg:screw"),
-        ]),
-        e.recipes.create.deploying(Item.of("ae2:printed_silicon"), [
-          Item.of("ae2:printed_silicon"),
-          Item.of("tfmg:screwdriver"),
-        ]),
+        e.recipes.create.deploying(
+          Item.of("createappliedkinetics:incomplete_logic_processor"),
+          [
+            Item.of("createappliedkinetics:incomplete_logic_processor"),
+            Item.of("ae2:printed_logic_processor"),
+          ]
+        ),
+        e.recipes.create.deploying(
+          Item.of("createappliedkinetics:incomplete_logic_processor"),
+          [
+            Item.of("createappliedkinetics:incomplete_logic_processor"),
+            Item.of("vintageimprovements:small_copper_spring"),
+          ]
+        ),
+        e.recipes.create.deploying(
+          Item.of("createappliedkinetics:incomplete_logic_processor"),
+          [
+            Item.of("createappliedkinetics:incomplete_logic_processor"),
+            Item.of("createaddition:electrum_wire"),
+          ]
+        ),
+        e.recipes.create.deploying(
+          Item.of("createappliedkinetics:incomplete_logic_processor"),
+          [
+            Item.of("createappliedkinetics:incomplete_logic_processor"),
+            Item.of("tfmg:screw"),
+          ]
+        ),
+        e.recipes.create.pressing(
+          Item.of("createappliedkinetics:incomplete_logic_processor"),
+          Item.of("createappliedkinetics:incomplete_logic_processor")
+        ),
       ]
     )
-    .transitionalItem("ae2:printed_silicon")
+    .transitionalItem("createappliedkinetics:incomplete_engineering_processor")
     .loops(1);
 
   e.recipes.create
@@ -104,46 +94,41 @@ ServerEvents.recipes((e) => {
       // begin
       Item.of("ae2:printed_silicon"),
       [
-        e.recipes.create.deploying(Item.of("ae2:printed_silicon"), [
-          Item.of("ae2:printed_silicon"),
-          Item.of("minecraft:redstone"),
-        ]),
-        e.custom({
-          type: "vintageimprovements:vibrating",
-          ingredients: [
-            {
-              item: "ae2:printed_silicon",
-            },
-          ],
-          results: [
-            {
-              item: "ae2:printed_silicon",
-            },
-          ],
-        }),
-        e.recipes.create.deploying(Item.of("ae2:printed_silicon"), [
-          Item.of("ae2:printed_silicon"),
-          Item.of("vintageimprovements:small_silver_spring"),
-        ]),
-        e.recipes.create.deploying(Item.of("ae2:printed_silicon"), [
-          Item.of("ae2:printed_silicon"),
-          Item.of("createaddition:electrum_wire"),
-        ]),
-        e.recipes.create.deploying(Item.of("ae2:printed_silicon"), [
-          Item.of("ae2:printed_silicon"),
-          Item.of("ae2:printed_engineering_processor"),
-        ]),
-        e.recipes.create.deploying(Item.of("ae2:printed_silicon"), [
-          Item.of("ae2:printed_silicon"),
-          Item.of("tfmg:screw"),
-        ]),
-        e.recipes.create.deploying(Item.of("ae2:printed_silicon"), [
-          Item.of("ae2:printed_silicon"),
-          Item.of("tfmg:screwdriver"),
-        ]),
+        e.recipes.create.deploying(
+          Item.of("createappliedkinetics:incomplete_engineering_processor"),
+          [
+            Item.of("createappliedkinetics:incomplete_engineering_processor"),
+            Item.of("ae2:printed_logic_processor"),
+          ]
+        ),
+        e.recipes.create.deploying(
+          Item.of("createappliedkinetics:incomplete_engineering_processor"),
+          [
+            Item.of("createappliedkinetics:incomplete_engineering_processor"),
+            Item.of("vintageimprovements:small_silver_spring"),
+          ]
+        ),
+        e.recipes.create.deploying(
+          Item.of("createappliedkinetics:incomplete_engineering_processor"),
+          [
+            Item.of("createappliedkinetics:incomplete_engineering_processor"),
+            Item.of("createaddition:electrum_wire"),
+          ]
+        ),
+        e.recipes.create.deploying(
+          Item.of("createappliedkinetics:incomplete_engineering_processor"),
+          [
+            Item.of("createappliedkinetics:incomplete_engineering_processor"),
+            Item.of("tfmg:screw"),
+          ]
+        ),
+        e.recipes.create.pressing(
+          Item.of("createappliedkinetics:incomplete_engineering_processor"),
+          Item.of("createappliedkinetics:incomplete_engineering_processor")
+        ),
       ]
     )
-    .transitionalItem("ae2:printed_silicon")
+    .transitionalItem("createappliedkinetics:incomplete_engineering_processor")
     .loops(1);
 
   e.recipes.create

@@ -16,11 +16,10 @@ const recipeRemovals = [
   { output: "alexscaves:burrowing_arrow" },
   { output: "alexscaves:nuclear_bomb" },
 
-  // CC: Tweaked
-  //   {
-  //     not: { type: "create:mechanical_crafting" },
-  //     output: "computercraft:turtle_normal",
-  //   },
+  // AE2
+  { output: "ae2:calculation_processor" },
+  { output: "ae2:logic_processor" },
+  { output: "ae2:engineering_processor" },
 ];
 ServerEvents.recipes((e) => {
   recipeRemovals.forEach((recipe) => {
