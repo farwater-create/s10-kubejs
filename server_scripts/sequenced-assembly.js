@@ -17,14 +17,14 @@ ServerEvents.recipes((e) => {
           Item.of("createappliedkinetics:incomplete_calculation_processor"),
           [
             Item.of("createappliedkinetics:incomplete_calculation_processor"),
-            Item.of("vintageimprovements:small_iron_spring"),
+            "#vintageimprovements:small_springs",
           ]
         ),
         e.recipes.create.deploying(
           Item.of("createappliedkinetics:incomplete_calculation_processor"),
           [
             Item.of("createappliedkinetics:incomplete_calculation_processor"),
-            Item.of("createaddition:electrum_wire"),
+            "#forge:wires",
           ]
         ),
         e.recipes.create.deploying(
@@ -61,14 +61,14 @@ ServerEvents.recipes((e) => {
           Item.of("createappliedkinetics:incomplete_logic_processor"),
           [
             Item.of("createappliedkinetics:incomplete_logic_processor"),
-            Item.of("vintageimprovements:small_copper_spring"),
+            "#vintageimprovements:small_springs",
           ]
         ),
         e.recipes.create.deploying(
           Item.of("createappliedkinetics:incomplete_logic_processor"),
           [
             Item.of("createappliedkinetics:incomplete_logic_processor"),
-            Item.of("createaddition:electrum_wire"),
+            "#forge:wires",
           ]
         ),
         e.recipes.create.deploying(
@@ -98,21 +98,21 @@ ServerEvents.recipes((e) => {
           Item.of("createappliedkinetics:incomplete_engineering_processor"),
           [
             Item.of("createappliedkinetics:incomplete_engineering_processor"),
-            Item.of("ae2:printed_logic_processor"),
+            Item.of("ae2:printed_engineering_processor"),
           ]
         ),
         e.recipes.create.deploying(
           Item.of("createappliedkinetics:incomplete_engineering_processor"),
           [
             Item.of("createappliedkinetics:incomplete_engineering_processor"),
-            Item.of("vintageimprovements:small_silver_spring"),
+            "#vintageimprovements:small_springs",
           ]
         ),
         e.recipes.create.deploying(
           Item.of("createappliedkinetics:incomplete_engineering_processor"),
           [
             Item.of("createappliedkinetics:incomplete_engineering_processor"),
-            Item.of("createaddition:electrum_wire"),
+            "#forge:wires",
           ]
         ),
         e.recipes.create.deploying(
