@@ -10,4 +10,4 @@ ServerEvents.recipes(e => {
     ].forEach((item) => {
       e.stonecutting(item, "create:industrial_iron_block");
     )
-  });
+});
