@@ -9,5 +9,5 @@ ServerEvents.recipes(e => {
     "railways:flat_riveted_locometal",
     ].forEach((item) => {
       e.stonecutting(item, "create:industrial_iron_block");
-    )
+    })
 });
