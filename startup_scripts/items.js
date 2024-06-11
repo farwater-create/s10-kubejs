@@ -1,8 +1,8 @@
 StartupEvents.registry("item", (event) => {
   console.log("Registering items...");
 
-  event.create("farwater:runic_golden_sheet").glow(true);
-  event.create("farwater:incomplete_runic_golden_sheet");
+  event.create("farwater:enchanted_golden_sheet").glow(true);
+  event.create("farwater:incomplete_enchanted_golden_sheet");
   event.create("farwater:blaze_core");
 
   event.create("createappliedkinetics:incomplete_calculation_processor_press");
