@@ -4,6 +4,7 @@ StartupEvents.registry("item", (event) => {
   event.create("farwater:enchanted_golden_sheet").glow(true);
   event.create("farwater:incomplete_enchanted_golden_sheet");
   event.create("farwater:blaze_core");
+  event.create("farwater:twilight_scroll").glow(true);
 
   event.create("createappliedkinetics:incomplete_calculation_processor_press");
   event.create("createappliedkinetics:incomplete_calculation_processor");
