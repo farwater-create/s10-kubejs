@@ -1,3 +1,5 @@
+Platform.mods.kubejs.name = "Farwater";
+
 StartupEvents.registry("item", (event) => {
   console.log("Registering items...");
 
