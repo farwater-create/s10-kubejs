@@ -4,7 +4,21 @@ StartupEvents.registry("item", (event) => {
   event.create("farwater:enchanted_golden_sheet").glow(true);
   event.create("farwater:incomplete_enchanted_golden_sheet");
   event.create("farwater:blaze_core");
-  event.create("farwater:twilight_scroll").glow(true);
+  event
+    .create("farwater:twilight_scroll")
+    .tooltip(
+      "§cConsume this scroll to gain access to the Twilight Forest portal in the hub."
+    )
+    .food((food) => {
+      food
+        .alwaysEdible()
+        .eaten((ctx) =>
+          ctx.server.runCommandSilent(
+            `lp user ${ctx.player.username} parent add twilight`
+          )
+        );
+    })
+    .glow(true);
 
   event.create("createappliedkinetics:incomplete_calculation_processor_press");
   event.create("createappliedkinetics:incomplete_calculation_processor");
