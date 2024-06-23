@@ -18,25 +18,25 @@ function addMixingRecipe(
 ServerEvents.recipes((e) => {
   e.recipes.create
     .mixing(
-      [Fluid.of("farwater:source_mixture", 200)], // output
+      [Fluid.of("farwater:magesource_mixture", 200)], // output
 
       [
-        Fluid.of("farwater:sourceberry_juice", 200),
-        Fluid.of("starbunclemania:source_fluid", 200),
+        Fluid.of("farwater:sourceberry_juice", 100),
+        Fluid.of("farwater:magebloom_juice", 100),
       ] // input
     )
-    .processingTime(10 * 20); // ticks
+    .processingTime(8 * 20); // ticks
 
   e.recipes.create
     .mixing(
       [Fluid.of("farwater:source_mixture", 200)], // output
 
       [
-        Fluid.of("farwater:magebloom_juice", 200),
-        Fluid.of("starbunclemania:source_fluid", 200),
+        Fluid.of("starbunclemania:source_fluid", 100),
+        Fluid.of("farwater:magesource_mixture", 100),
       ] // input
     )
-    .processingTime(10 * 20); // ticks
+    .processingTime(8 * 20); // ticks
 
   e.recipes.create
     .mixing(

@@ -10,4 +10,7 @@ ServerEvents.tags("item", (event) => {
   event.add("create:mechanical_pumps", "tfmg:brass_mechanical_pump");
   event.add("create:mechanical_pumps", "tfmg:cast_iron_mechanical_pump");
   event.add("create:mechanical_pumps", "tfmg:steel_mechanical_pump");
+
+  event.add("ars_nouveau:valid_gems", "minecraft:emerald");
+  event.add("ars_nouveau:valid_gems", "minecraft:lapis_lazuli");
 });

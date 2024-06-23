@@ -2,7 +2,7 @@
 
 ServerEvents.recipes((e) => {
   e.recipes.create.compacting(
-    [Fluid.of("farwater:sourceberry_juice", 50)],
+    [Fluid.of("farwater:sourceberry_juice", 20)],
     [Item.of("ars_nouveau:sourceberry_bush", 1)]
   );
 
