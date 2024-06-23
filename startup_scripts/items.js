@@ -6,6 +6,8 @@ StartupEvents.registry("item", (event) => {
   event.create("farwater:enchanted_golden_sheet").glow(true);
   event.create("farwater:incomplete_enchanted_golden_sheet");
   event.create("farwater:blaze_core");
+  event.create("farwater:rubber");
+  event.create("farwater:cured_rubber");
   event
     .create("farwater:twilight_scroll")
     .tooltip(
@@ -21,6 +23,22 @@ StartupEvents.registry("item", (event) => {
         );
     })
     .glow(true);
+
+  event
+    .create("farwater:saw", "sword")
+    .tier("tool")
+    .displayName("Saw")
+    .rarity("COMMON");
+
+  event.create("create:makeshift_kinetic_mechanism");
+  event.create("create:kinetic_mechanism");
+  event.create("create:incomplete_kinetic_mechanism");
+  event.create("create:sealed_mechanism");
+  event.create("create:incomplete_sealed_mechanism");
+  event.create("create:calculation_mechanism");
+  event.create("create:incomplete_calculation_mechanism");
+  event.create("create:abstruse_mechanism");
+  event.create("create:incomplete_abstruse_mechanism");
 
   event.create("createappliedkinetics:incomplete_calculation_processor_press");
   event.create("createappliedkinetics:incomplete_calculation_processor");

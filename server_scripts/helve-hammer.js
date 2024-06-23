@@ -1,24 +1,29 @@
-// ServerEvents.recipes((event) => {
-//   [
-//     {
-//       head: "ae2:calculation_processor_press",
-//       ingredient: "createaddition:electrum_sheet",
-//       result: "ae2:printed_logic_circuit",
-//     },
-//   ].forEach((recipe) => {
-//     event.custom({
-//       type: "vintageimprovements:curving",
-//       itemAsHead: recipe.head,
-//       ingredients: [
-//         {
-//           item: recipe.ingredient,
-//         },
-//       ],
-//       results: [
-//         {
-//           item: recipe.result,
-//         },
-//       ],
-//     });
-//   });
-// });
+ServerEvents.recipes((event) => {
+  [
+    {
+      ingredient: "createutilities:void_steel_ingot",
+      result: "createutilities:void_steel_sheet",
+      blows: 2,
+    },
+    {
+      ingredient: "ethuim:ethium_ingot",
+      result: "ethuim:ethium_sheet",
+      blows: 5,
+    },
+  ].forEach((recipe) => {
+    event.custom({
+      type: "vintageimprovements:hammering",
+      hammerBlows: recipe.blows,
+      ingredients: [
+        {
+          item: recipe.ingredient,
+        },
+      ],
+      results: [
+        {
+          item: recipe.result,
+        },
+      ],
+    });
+  });
+});
