@@ -34,13 +34,13 @@ ServerEvents.recipes((event) => {
     .stress(512)
     .id("kubejs:raw_copper_extraction");
 
-  // RANDOMIUM VEIN
+  // TUFF VEIN
   event.recipes.createoreexcavation
-    .vein('{"text": "Randomium Vein"}', "createoreexcavation:raw_emerald")
+    .vein('{"text": "Tuff Vein"}', "minecraft:tuff")
     .placement(22, 14, 8964561)
     .alwaysInfinite()
     .biomeWhitelist("forge:is_overworld")
-    .id("kubejs:randomium_vein");
+    .id("kubejs:tuff_vein");
   event.recipes.createoreexcavation
     .drilling(
       [
@@ -48,11 +48,11 @@ ServerEvents.recipes((event) => {
         Item.of("createoreexcavation:raw_emerald").withChance(0.002),
         Item.of("createoreexcavation:raw_diamond").withChance(0.001),
       ],
-      "kubejs:randomium_vein",
-      140
+      "kubejs:tuff_vein",
+      180
     )
     .fluid("minecraft:water")
     .drill("createoreexcavation:diamond_drill")
     .stress(1024)
-    .id("kubejs:randomium_extraction");
+    .id("kubejs:tuff_extraction");
 });

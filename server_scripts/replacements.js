@@ -10,4 +10,16 @@ ServerEvents.recipes((e) => {
     "create:andesite_casing", // Arg 2: the item to replace
     "create:andesite_machine" // Arg 3: the item to replace it with
   );
+
+  e.replaceInput(
+    { output: "createoreexcavation:drilling_machine" }, // Arg 1: the filter
+    "create:copper_casing", // Arg 2: the item to replace
+    "create:sealed_machine" // Arg 3: the item to replace it with
+  );
+
+  e.replaceInput(
+    { output: "createoreexcavation:vein_finder" }, // Arg 1: the filter
+    "#forge:ores/redstone", // Arg 2: the item to replace
+    "forbidden_arcanus:soul" // Arg 3: the item to replace it with
+  );
 });
