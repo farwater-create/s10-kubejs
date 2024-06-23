@@ -4,6 +4,9 @@ const jeiRemovals = [
   "alexscaves:magnetic_light",
   "alexscaves:magnetic_quarry",
   "alexscaves:quarry_smasher",
+  "tfmg:quad_potato_cannon",
+  "tfmg:quad_potato_cannon",
+  "create:potato_cannon",
   "ae2:inscriber",
 ];
 

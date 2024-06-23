@@ -12,4 +12,21 @@ ServerEvents.recipes((event) => {
     "4x minecraft:paper",
     "1x minecraft:crafting_table",
   ]);
+
+  event.shapeless("ars_nouveau:novice_spell_book", [
+    "minecraft:book",
+    "ars_nouveau:source_gem",
+  ]);
+
+  event.shapeless("ars_nouveau:apprentice_spell_book", [
+    "ars_nouveau:novice_spell_book",
+    "forbidden_arcanus:aureal_bottle",
+    "farwater:source_mixture_bottle",
+  ]);
+
+  event.shapeless("ars_nouveau:archmage_spell_book", [
+    "ars_nouveau:apprentice_spell_book",
+    "forbidden_arcanus:eternal_stella",
+    "ars_nouveau:wilden_tribute",
+  ]);
 });
