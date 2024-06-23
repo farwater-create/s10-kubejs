@@ -25,4 +25,9 @@ ServerEvents.recipes((e) => {
     [Item.of("farwater:rubber", 1)],
     [Fluid.of("minecraft:water", 125), Item.of("minecraft:kelp", 2)]
   );
+
+  e.recipes.create.compacting(
+    [Fluid.of("farwater:liquid_rubber", 100)],
+    [Item.of("farwater:cured_rubber", 1)]
+  );
 });
