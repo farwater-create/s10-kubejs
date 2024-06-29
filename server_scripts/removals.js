@@ -33,11 +33,11 @@ const recipeRemovals = [
   { output: "ars_nouveau:magebloom_fiber" },
 
   // Alex's caves
-  { output: "alexscaves:burrowing_arrow" },
-  { output: "alexscaves:nuclear_bomb" },
-  { output: "alexscaves:magnetic_light" },
-  { output: "alexscaves:magnetic_quarry" },
-  { output: "alexscaves:quarry_smasher" },
+  //{ output: "alexscaves:burrowing_arrow" },
+  //{ output: "alexscaves:nuclear_bomb" },
+  //{ output: "alexscaves:magnetic_light" },
+  //{ output: "alexscaves:magnetic_quarry" },
+  //{ output: "alexscaves:quarry_smasher" },
 
   // Forbidden Arcanus
   { output: "forbidden_arcanus:ender_pearl_fragment" },
@@ -71,6 +71,9 @@ const recipeRemovals = [
 
   // TFMG
   { output: "tfmg:quad_potato_cannon" },
+
+  //Brewery
+  { output: "brewery:rope"}
 ];
 
 ServerEvents.recipes((e) => {
