@@ -10,7 +10,7 @@ ServerEvents.recipes((event) => {
       "forbidden_arcanus:dark_matter",
       "minecraft:ender_pearl",
     ],
-    "minecraft:gold_ingot",
+    "twilightforest:knightmetal_ingot",
     "createutilities:void_steel_ingot",
     10000 // may want to alter source cost
   );
@@ -60,18 +60,6 @@ ServerEvents.recipes((event) => {
   );
 
   event.recipes.ars_nouveau.imbuement(
-    "minecraft:quartz", // input item
-    "create:rose_quartz", // output
-    500, // source cost
-    [
-      "minecraft:redstone",
-      "minecraft:redstone",
-      "minecraft:redstone",
-      "minecraft:redstone",
-    ]
-  );
-
-  event.recipes.ars_nouveau.imbuement(
     "minecraft:quartz_block", // input item
     "ae2:damaged_budding_quartz", // output
     4000, // source cost
@@ -100,6 +88,21 @@ ServerEvents.recipes((event) => {
       "ae2:fluix_crystal",
       "ars_nouveau:water_essence",
       "ae2:fluix_crystal",
+    ]
+  );
+
+  event.recipes.ars_nouveau.imbuement(
+    "ars_nouveau:blank_parchment", // input item
+    "farwater:twilight_scroll", // output
+    2000, // source cost
+    [
+      "minecraft:water_bucket",
+      "minecraft:diamond",
+      "#minecraft:flowers",
+      "#minecraft:saplings",
+      "#minecraft:saplings",
+      "#minecraft:flowers",
+      "minecraft:diamond",
     ]
   );
 });

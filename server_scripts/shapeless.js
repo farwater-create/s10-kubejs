@@ -29,4 +29,24 @@ ServerEvents.recipes((event) => {
     "forbidden_arcanus:eternal_stella",
     "ars_nouveau:wilden_tribute",
   ]);
+
+  event.shapeless("create:sealed_mechanism", [
+    "4x farwater:cured_rubber",
+    "#create:kinetic_mechanisms",
+  ]);
+
+  event.shapeless("create:andesite_machine", [
+    "4x #create:kinetic_mechanisms",
+    "create:andesite_casing",
+  ]);
+
+  event.shapeless("create:sealed_machine", [
+    "4x create:sealed_mechanism",
+    "create:copper_casing",
+  ]);
+
+  event.shapeless("create:brass_machine", [
+    "4x create:precision_mechanism",
+    "create:brass_casing",
+  ]);
 });

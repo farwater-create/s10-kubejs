@@ -37,8 +37,12 @@ StartupEvents.registry("item", (event) => {
   event.create("create:incomplete_sealed_mechanism");
   event.create("create:calculation_mechanism");
   event.create("create:incomplete_calculation_mechanism");
+  event.create("create:infernal_mechanism");
+  event.create("create:incomplete_infernal_mechanism");
   event.create("create:abstruse_mechanism");
   event.create("create:incomplete_abstruse_mechanism");
+
+  event.create("tfmg:incomplete_steel_mechanism");
 
   event.create("createappliedkinetics:incomplete_calculation_processor_press");
   event.create("createappliedkinetics:incomplete_calculation_processor");

@@ -13,4 +13,10 @@ ServerEvents.tags("item", (event) => {
 
   event.add("ars_nouveau:valid_gems", "minecraft:emerald");
   event.add("ars_nouveau:valid_gems", "minecraft:lapis_lazuli");
+
+  event.add("farwater:limestones", "meadow:limestone");
+  event.add("farwater:limestones", "create:limestone");
+
+  event.add("farwater:air_focus", "ars_elemental:air_focus");
+  event.add("farwater:air_focus", "ars_elemental:lesser_air_focus");
 });

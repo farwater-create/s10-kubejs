@@ -32,8 +32,8 @@ ServerEvents.recipes((e) => {
       [Fluid.of("farwater:source_mixture", 200)], // output
 
       [
-        Fluid.of("starbunclemania:source_fluid", 100),
-        Fluid.of("farwater:magesource_mixture", 100),
+        Fluid.of("starbunclemania:source_fluid", 200),
+        Fluid.of("farwater:magesource_mixture", 200),
       ] // input
     )
     .processingTime(8 * 20); // ticks
@@ -82,4 +82,27 @@ ServerEvents.recipes((e) => {
     )
     .heated()
     .processingTime(10 * 20); // ticks
+
+  let tier2Upgrade = (item) => {
+    e.recipes.create
+      .mixing(
+        [Item.of(item, '{Damage:0,an_stack_perks:{color:"",perks:[],tier:1}}')], // output
+
+        [Item.of(item, 1), Fluid.of("farwater:source_mixture", 1000)] // input
+      )
+      .processingTime(10 * 20); // ticks
+  };
+
+  tier2Upgrade("ars_nouveau:sorcerer_hood");
+  tier2Upgrade("ars_nouveau:sorcerer_robes");
+  tier2Upgrade("ars_nouveau:sorcerer_leggings");
+  tier2Upgrade("ars_nouveau:sorcerer_boots");
+  tier2Upgrade("ars_nouveau:arcanist_hood");
+  tier2Upgrade("ars_nouveau:arcanist_robes");
+  tier2Upgrade("ars_nouveau:arcanist_leggings");
+  tier2Upgrade("ars_nouveau:arcanist_boots");
+  tier2Upgrade("ars_nouveau:battlemage_hood");
+  tier2Upgrade("ars_nouveau:battlemage_robes");
+  tier2Upgrade("ars_nouveau:battlemage_leggings");
+  tier2Upgrade("ars_nouveau:battlemage_boots");
 });

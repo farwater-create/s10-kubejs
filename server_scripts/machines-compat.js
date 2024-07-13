@@ -75,6 +75,7 @@ ServerEvents.recipes((event) => {
     ["minecraft:copper_block", "create:copper_backtank"],
     ["minecraft:hopper", Item.of("create:spout", 2)],
     ["minecraft:iron_bars", "create:item_drain"],
+    ["create_sa:steam_engine", Item.of("create:steam_engine", 3)],
     [
       Ingredient.of("#create:sandpaper"),
       Item.of("create_enchantment_industry:disenchanter", 2),
@@ -90,8 +91,6 @@ ServerEvents.recipes((event) => {
     Item.of("create:smart_fluid_pipe", 2),
     Item.of("create:hose_pulley", 1),
     Item.of("create:portable_fluid_interface", 2),
-    //Item.of('alloyedguns:advanced_gun_kit'),
-    Item.of("create:steam_engine", 3),
   ];
   multicut(copper_machines_cutting, "create:sealed_machine", true);
 

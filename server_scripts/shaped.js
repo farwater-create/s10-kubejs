@@ -21,18 +21,27 @@ ServerEvents.recipes((event) => {
     R: "farwater:cured_rubber",
   });
 
-  event.shaped("create:andesite_machine", [" A ", "ABA", " A "], {
-    A: "#create:kinetic_mechanisms",
-    B: "create:andesite_casing",
-  });
+  let head = (name, material) => {
+    event.shaped(name, ["MMM", "M M"], {
+      M: material,
+    });
+  };
 
-  event.shaped("create:sealed_machine", [" A ", "ABA", " A "], {
-    A: "create:sealed_mechanism",
-    B: "create:copper_casing",
-  });
+  let chest = (name, material) => {
+    event.shaped(name, ["M M", "MMM", "MMM"], {
+      M: material,
+    });
+  };
 
-  event.shaped("create:brass_machine", [" A ", "ABA", " A "], {
-    A: "create:precision_mechanism",
-    B: "create:brass_casing",
-  });
+  let legs = (name, material) => {
+    event.shaped(name, ["MMM", "M M", "M M"], {
+      M: material,
+    });
+  };
+
+  let foot = (name, material) => {
+    event.shaped(name, ["M M", "M M"], {
+      M: material,
+    });
+  };
 });

@@ -103,7 +103,7 @@ ServerEvents.recipes((e) => {
   e.recipes.create
     .sequenced_assembly(
       [Item.of("create:precision_mechanism")],
-      Item.of("create:kinetic_mechanism"),
+      Ingredient.of("#create:kinetic_mechanisms"),
       [
         e.recipes.create.deploying(t, [t, "create:electron_tube"]),
         e.recipes.create.deploying(t, [t, "create:electron_tube"]),
@@ -117,10 +117,10 @@ ServerEvents.recipes((e) => {
   e.recipes.create
     .sequenced_assembly(
       [Item.of("create:sealed_mechanism")],
-      Item.of("create:kinetic_mechanism"),
+      Ingredient.of("#create:kinetic_mechanisms"),
       [
         e.recipes.create.filling(t, [
-          Fluid.of("farwater:liquid_rubber", 200),
+          Fluid.of("farwater:liquid_rubber", 125),
           t,
         ]),
         e.custom({
@@ -128,6 +128,34 @@ ServerEvents.recipes((e) => {
           ingredients: [{ item: t }],
           results: [{ item: t }],
         }),
+      ]
+    )
+    .transitionalItem(t)
+    .loops(1);
+
+  t = "create_sa:steam_engine";
+  e.recipes.create
+    .sequenced_assembly(
+      [Item.of("create_sa:steam_engine")],
+      Item.of("create:precision_mechanism"),
+      [
+        e.recipes.create.deploying(t, [t, "vintageimprovements:blaze_spring"]),
+        e.recipes.create.deploying(t, [t, "create:propeller"]),
+      ]
+    )
+    .transitionalItem(t)
+    .loops(1);
+
+  t = "tfmg:incomplete_steel_mechanism";
+  e.recipes.create
+    .sequenced_assembly(
+      [Item.of("tfmg:steel_mechanism")],
+      Item.of("create:precision_mechanism"),
+      [
+        e.recipes.create.deploying(t, [t, "tfmg:heavy_plate"]),
+        e.recipes.create.deploying(t, [t, "tfmg:aluminum_ingot"]),
+        e.recipes.create.deploying(t, [t, "tfmg:screw"]),
+        e.recipes.create.deploying(t, [t, "tfmg:screwdriver"]),
       ]
     )
     .transitionalItem(t)

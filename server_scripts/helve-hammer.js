@@ -10,6 +10,11 @@ ServerEvents.recipes((event) => {
       result: "ethuim:ethium_sheet",
       blows: 5,
     },
+    {
+      ingredient: "tfmg:steel_ingot",
+      result: "tfmg:heavy_plate",
+      blows: 2,
+    },
   ].forEach((recipe) => {
     event.custom({
       type: "vintageimprovements:hammering",

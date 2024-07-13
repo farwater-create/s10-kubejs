@@ -13,4 +13,9 @@ ServerEvents.recipes((e) => {
     Ingredient.of("#ars_nouveau:valid_gems", 1),
     Fluid.of("starbunclemania:source_fluid", 100),
   ]);
+
+  e.recipes.create.filling(Item.of("ars_nouveau:magebloom_crop", 1), [
+    Ingredient.of("#forge:seeds", 1),
+    Fluid.of("farwater:sourceberry_juice", 100),
+  ]);
 });
