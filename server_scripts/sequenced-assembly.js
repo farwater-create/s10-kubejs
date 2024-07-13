@@ -93,7 +93,7 @@ ServerEvents.recipes((e) => {
       [
         e.recipes.create.deploying(t, [t, "create:andesite_alloy"]),
         e.recipes.create.deploying(t, [t, "create:andesite_alloy"]),
-        e.recipes.create.deploying(t, [t, "farwater:saw"]),
+        e.recipes.create.cutting(t, t),
       ]
     )
     .transitionalItem(t)
