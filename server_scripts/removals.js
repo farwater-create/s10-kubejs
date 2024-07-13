@@ -93,6 +93,9 @@ const recipeRemovals = [
   // Alex Mobs
   { output: "alexsmobs:dimensional_carver" },
   { output: "alexsmobs:shattered_dimensional_carver" },
+
+  // Brewery
+  { output: "brewery:rope" },
 ];
 
 ServerEvents.recipes((e) => {
