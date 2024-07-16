@@ -3,9 +3,11 @@
 	"block.tfmg.light_gray_concrete_slab": "Ash Concrete Slab",
 	"block.tfmg.light_gray_concrete_stairs": "Ash Concrete Stairs",
 	"block.tfmg.light_gray_concrete_wall": "Ash Concrete Wall",
+	"block.tfmg.light_gray_caution_block": "Ash Caution Block",
 
 	"block.tfmg.light_blue_concrete": "Sky Concrete",
 	"block.tfmg.light_blue_concrete_slab": "Sky Concrete Slab",
 	"block.tfmg.light_blue_concrete_stairs": "Sky Concrete Stairs",
-	"block.tfmg.light_blue_concrete_wall": "Sky Concrete Wall"
+	"block.tfmg.light_blue_concrete_wall": "Sky Concrete Wall",
+	"block.tfmg.light_blue_caution_block": "Sky Caution Block"
 }

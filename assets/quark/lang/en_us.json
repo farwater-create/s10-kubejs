@@ -1,0 +1,19 @@
+{
+    "block.quark.light_blue_shingles": "Sky Terracotta Shingles",
+    "block.quark.light_blue_shingles_stairs": "Sky Terracotta Shingle Stairs",
+    "block.quark.light_blue_shingles_slab": "Sky Terracotta Shingle Slab",
+    "block.quark.light_blue_shingles_vertical_slab": "Sky Terracotta Shingle Vertical Slab",
+    "block.quark.light_blue_framed_glass": "Sky Framed Glass",
+    "block.quark.light_blue_framed_glass_pane": "Sky Framed Glass Pane",
+    "block.quark.light_blue_stool": "Sky Stool",
+    "item.quark.light_blue_shard": "Sky Glass Shard",
+
+    "block.quark.light_gray_shingles": "Ash Terracotta Shingles",
+    "block.quark.light_gray_shingles_stairs": "Ash Terracotta Shingle Stairs",
+    "block.quark.light_gray_shingles_slab": "Ash Terracotta Shingle Slab",
+    "block.quark.light_gray_shingles_vertical_slab": "Ash Terracotta Shingle Vertical Slab",
+    "block.quark.light_gray_framed_glass": "Ash Framed Glass",
+    "block.quark.light_gray_framed_glass_pane": "Ash Framed Glass Pane",
+    "block.quark.light_gray_stool": "Ash Stool",
+    "item.quark.light_gray_shard": "Ash Glass Shard"
+}
