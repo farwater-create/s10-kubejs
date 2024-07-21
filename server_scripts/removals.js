@@ -1,20 +1,8 @@
 const recipeRemovals = [
-  // Vanilla
   { output: "minecraft:ender_pearl" },
   { output: "minecraft:ender_eye", type: "minecraft:crafting_shapeless" },
-
-  // Cataclysm
-  // { output: "cataclysm:the_incinerator" },
-  // { output: "cataclysm:bulwark_of_the_flame" },
-  // { output: "cataclysm:ignitium_helmet" },
-  // { output: "cataclysm:ignitium_chestplate" },
-  // { output: "cataclysm:ignitium_elytra_chestplate" },
-  // { output: "cataclysm:ignitium_leggings" },
-  // { output: "cataclysm:ignitium_boots" },
   { output: "cataclysm:meat_shredder" },
   { output: "cataclysm:laser_gatling" },
-
-  // Ars Nouveau
   { id: "ars_nouveau:upgrade_1" },
   { output: "ars_nouveau:stable_warp_scroll" },
   { output: "ars_nouveau:warp_scroll" },
@@ -33,32 +21,17 @@ const recipeRemovals = [
     type: "minecraft:crafting_shapeless",
   },
   { output: "ars_nouveau:magebloom_fiber" },
-
-  // Forbidden Arcanus
   { output: "forbidden_arcanus:ender_pearl_fragment" },
-
-  // Create
   { output: "create:polished_rose_quartz", type: "create:deploying" },
   { output: "create:crafting_blueprint" },
   { output: "create:potato_cannon" },
   { type: "create:sequenced_assembly", output: "create:precision_mechanism" },
   { type: "create:pressing", output: "createutilities:void_steel_sheet" },
   { type: "create:pressing", output: "ethuim:ethium_sheet" },
-  {
-    output: "create:fluid_pipe",
-    type: "minecraft:crafting_shaped",
-  },
-
-  // Create SA
+  { output: "create:fluid_pipe", type: "minecraft:crafting_shaped" },
   { output: "create_sa:steam_engine" },
-
-  // Create Utilities
   { output: "createutilities:void_steel_ingot" },
-
-  // Vintage Improvements
   { output: "minecraft:emerald", type: "vintageimprovements:curving" },
-
-  // AE2
   { output: "ae2:printed_logic_processor" },
   { output: "ae2:printed_engineering_processor" },
   { output: "ae2:printed_calculation_processor" },
@@ -71,8 +44,6 @@ const recipeRemovals = [
   { output: "ae2:silicon_press" },
   { output: "ae2:inscriber" },
   { output: "ae2:engineering_processor" },
-
-  // Ore Excavation
   { type: "createoreexcavation:drilling" },
   { type: "createoreexcavation:extracting" },
   { type: "createoreexcavation:vein" },
@@ -81,272 +52,77 @@ const recipeRemovals = [
     type: "minecraft:crafting_shaped",
   },
   { output: "createoreexcavation:drill", type: "minecraft:crafting_shaped" },
-
-  // TFMG
   { output: "tfmg:quad_potato_cannon" },
   { output: "tfmg:steel_mechanism", type: "create:sequenced_assembly" },
   { output: "tfmg:heavy_plate", type: "create:sequenced_assembly" },
   { output: "tfmg:steel_pipe", type: "minecraft:crafting_shaped" },
   { output: "tfmg:cast_iron_pipe", type: "minecraft:crafting_shaped" },
   { output: "tfmg:brass_pipe", type: "minecraft:crafting_shaped" },
-
-  // Alex Mobs
   { output: "alexsmobs:dimensional_carver" },
   { output: "alexsmobs:shattered_dimensional_carver" },
-
-  // Brewery
-  { output: "brewery:rope" }
-
-  //dye depot
-  { output: "supplementaries:present_maroon" },
-  { output: "supplementaries:present_rose" },
-  { output: "supplementaries:present_coral" },
-  { output: "supplementaries:present_indigo" },
-  { output: "supplementaries:present_navy" },
-  { output: "supplementaries:present_slate" },
-  { output: "supplementaries:present_olive" },
-  { output: "supplementaries:present_amber" },
-  { output: "supplementaries:present_beige" },
-  { output: "supplementaries:present_teal" },
-  { output: "supplementaries:present_mint" },
-  { output: "supplementaries:present_aqua" },
-  { output: "supplementaries:present_verdant" },
-  { output: "supplementaries:present_forest" },
-  { output: "supplementaries:present_ginger" },
-  { output: "supplementaries:present_tan" },
-  { output: "supplementaries:trapped_present_maroon" },
-  { output: "supplementaries:trapped_present_rose" },
-  { output: "supplementaries:trapped_present_coral" },
-  { output: "supplementaries:trapped_present_indigo" },
-  { output: "supplementaries:trapped_present_navy" },
-  { output: "supplementaries:trapped_present_slate" },
-  { output: "supplementaries:trapped_present_olive" },
-  { output: "supplementaries:trapped_present_amber" },
-  { output: "supplementaries:trapped_present_beige" },
-  { output: "supplementaries:trapped_present_teal" },
-  { output: "supplementaries:trapped_present_mint" },
-  { output: "supplementaries:trapped_present_aqua" },
-  { output: "supplementaries:trapped_present_verdant" },
-  { output: "supplementaries:trapped_present_forest" },
-  { output: "supplementaries:trapped_present_ginger" },
-  { output: "supplementaries:trapped_present_tan" },
-  { output: "supplementaries:candle_holder_maroon" },
-  { output: "supplementaries:candle_holder_rose" },
-  { output: "supplementaries:candle_holder_coral" },
-  { output: "supplementaries:candle_holder_indigo" },
-  { output: "supplementaries:candle_holder_navy" },
-  { output: "supplementaries:candle_holder_slate" },
-  { output: "supplementaries:candle_holder_olive" },
-  { output: "supplementaries:candle_holder_amber" },
-  { output: "supplementaries:candle_holder_beige" },
-  { output: "supplementaries:candle_holder_teal" },
-  { output: "supplementaries:candle_holder_mint" },
-  { output: "supplementaries:candle_holder_aqua" },
-  { output: "supplementaries:candle_holder_verdant" },
-  { output: "supplementaries:candle_holder_forest" },
-  { output: "supplementaries:candle_holder_ginger" },
-  { output: "supplementaries:candle_holder_tan" },
-  { output: "supplementaries:flag_maroon" },
-  { output: "supplementaries:flag_rose" },
-  { output: "supplementaries:flag_coral" },
-  { output: "supplementaries:flag_indigo" },
-  { output: "supplementaries:flag_navy" },
-  { output: "supplementaries:flag_slate" },
-  { output: "supplementaries:flag_olive" },
-  { output: "supplementaries:flag_amber" },
-  { output: "supplementaries:flag_beige" },
-  { output: "supplementaries:flag_teal" },
-  { output: "supplementaries:flag_mint" },
-  { output: "supplementaries:flag_aqua" },
-  { output: "supplementaries:flag_verdant" },
-  { output: "supplementaries:flag_forest" },
-  { output: "supplementaries:flag_ginger" },
-  { output: "supplementaries:flag_tan" },
-
-  { output: "createdeco:maroon_shipping_container" },
-  { output: "createdeco:rose_shipping_container" },
-  { output: "createdeco:coral_shipping_container" },
-  { output: "createdeco:indigo_shipping_container" },
-  { output: "createdeco:navy_shipping_container" },
-  { output: "createdeco:slate_shipping_container" },
-  { output: "createdeco:olive_shipping_container" },
-  { output: "createdeco:amber_shipping_container" },
-  { output: "createdeco:beige_shipping_container" },
-  { output: "createdeco:teal_shipping_container" },
-  { output: "createdeco:mint_shipping_container" },
-  { output: "createdeco:aqua_shipping_container" },
-  { output: "createdeco:verdant_shipping_container" },
-  { output: "createdeco:forest_shipping_container" },
-  { output: "createdeco:ginger_shipping_container" },
-  { output: "createdeco:tan_shipping_container" },
-  { output: "createdeco:maroon_placard" },
-  { output: "createdeco:rose_placard" },
-  { output: "createdeco:coral_placard" },
-  { output: "createdeco:indigo_placard" },
-  { output: "createdeco:navy_placard" },
-  { output: "createdeco:slate_placard" },
-  { output: "createdeco:olive_placard" },
-  { output: "createdeco:amber_placard" },
-  { output: "createdeco:beige_placard" },
-  { output: "createdeco:teal_placard" },
-  { output: "createdeco:mint_placard" },
-  { output: "createdeco:aqua_placard" },
-  { output: "createdeco:verdant_placard" },
-  { output: "createdeco:forest_placard" },
-  { output: "createdeco:ginger_placard" },
-  { output: "createdeco:tan_placard" },
-
-  { output: "numismatics:maroon_card" },
-  { output: "numismatics:rose_card" },
-  { output: "numismatics:coral_card" },
-  { output: "numismatics:indigo_card" },
-  { output: "numismatics:navy_card" },
-  { output: "numismatics:slate_card" },
-  { output: "numismatics:olive_card" },
-  { output: "numismatics:amber_card" },
-  { output: "numismatics:beige_card" },
-  { output: "numismatics:teal_card" },
-  { output: "numismatics:mint_card" },
-  { output: "numismatics:aqua_card" },
-  { output: "numismatics:verdant_card" },
-  { output: "numismatics:forest_card" },
-  { output: "numismatics:ginger_card" },
-  { output: "numismatics:tan_card" },
-  { output: "numismatics:maroon_id_card" },
-  { output: "numismatics:rose_id_card" },
-  { output: "numismatics:coral_id_card" },
-  { output: "numismatics:indigo_id_card" },
-  { output: "numismatics:navy_id_card" },
-  { output: "numismatics:slate_id_card" },
-  { output: "numismatics:olive_id_card" },
-  { output: "numismatics:amber_id_card" },
-  { output: "numismatics:beige_id_card" },
-  { output: "numismatics:teal_id_card" },
-  { output: "numismatics:mint_id_card" },
-  { output: "numismatics:aqua_id_card" },
-  { output: "numismatics:verdant_id_card" },
-  { output: "numismatics:forest_id_card" },
-  { output: "numismatics:ginger_id_card" },
-  { output: "numismatics:tan_id_card" },
-
-  { output: "railways:maroon_conductor_cap" },
-  { output: "railways:rose_conductor_cap" },
-  { output: "railways:coral_conductor_cap" },
-  { output: "railways:indigo_conductor_cap" },
-  { output: "railways:navy_conductor_cap" },
-  { output: "railways:slate_conductor_cap" },
-  { output: "railways:olive_conductor_cap" },
-  { output: "railways:amber_conductor_cap" },
-  { output: "railways:beige_conductor_cap" },
-  { output: "railways:teal_conductor_cap" },
-  { output: "railways:mint_conductor_cap" },
-  { output: "railways:aqua_conductor_cap" },
-  { output: "railways:verdant_conductor_cap" },
-  { output: "railways:forest_conductor_cap" },
-  { output: "railways:ginger_conductor_cap" },
-  { output: "railways:tan_conductor_cap" },
-  { output: "railways:maroon_incomplete_conductor_cap" },
-  { output: "railways:rose_incomplete_conductor_cap" },
-  { output: "railways:coral_incomplete_conductor_cap" },
-  { output: "railways:indigo_incomplete_conductor_cap" },
-  { output: "railways:navy_incomplete_conductor_cap" },
-  { output: "railways:slate_incomplete_conductor_cap" },
-  { output: "railways:olive_incomplete_conductor_cap" },
-  { output: "railways:amber_incomplete_conductor_cap" },
-  { output: "railways:beige_incomplete_conductor_cap" },
-  { output: "railways:teal_incomplete_conductor_cap" },
-  { output: "railways:mint_incomplete_conductor_cap" },
-  { output: "railways:aqua_incomplete_conductor_cap" },
-  { output: "railways:verdant_incomplete_conductor_cap" },
-  { output: "railways:forest_incomplete_conductor_cap" },
-  { output: "railways:ginger_incomplete_conductor_cap" },
-  { output: "railways:tan_incomplete_conductor_cap" },
-
-  { output: "create:maroon_seat" },
-  { output: "create:rose_seat" },
-  { output: "create:coral_seat" },
-  { output: "create:indigo_seat" },
-  { output: "create:navy_seat" },
-  { output: "create:slate_seat" },
-  { output: "create:olive_seat" },
-  { output: "create:amber_seat" },
-  { output: "create:beige_seat" },
-  { output: "create:teal_seat" },
-  { output: "create:mint_seat" },
-  { output: "create:aqua_seat" },
-  { output: "create:verdant_seat" },
-  { output: "create:forest_seat" },
-  { output: "create:ginger_seat" },
-  { output: "create:tan_seat" },
-  { output: "create:maroon_toolbox" },
-  { output: "create:rose_toolbox" },
-  { output: "create:coral_toolbox" },
-  { output: "create:indigo_toolbox" },
-  { output: "create:navy_toolbox" },
-  { output: "create:slate_toolbox" },
-  { output: "create:olive_toobox" },
-  { output: "create:amber_toolbox" },
-  { output: "create:beige_toolbox" },
-  { output: "create:teal_toolbox" },
-  { output: "create:mint_toolbox" },
-  { output: "create:aqua_toolbox" },
-  { output: "create:verdant_toolbox" },
-  { output: "create:forest_toolbox" },
-  { output: "create:ginger_toolbox" },
-  { output: "create:tan_toolbox" },
-  { output: "create:maroon_valve_handle" },
-  { output: "create:rose_valve_handle" },
-  { output: "create:coral_valve_handle" },
-  { output: "create:indigo_valve_handle" },
-  { output: "create:navy_valve_handle" },
-  { output: "create:slate_valve_handle" },
-  { output: "create:olive_valve_handle" },
-  { output: "create:amber_valve_handle" },
-  { output: "create:beige_valve_handle" },
-  { output: "create:teal_valve_handle" },
-  { output: "create:mint_valve_handle" },
-  { output: "create:aqua_valve_handle" },
-  { output: "create:verdant_valve_handle" },
-  { output: "create:forest_valve_handle" },
-  { output: "create:ginger_valve_handle" },
-  { output: "create:tan_valve_handle" },
-
-  { output: "reliquary:pedestals/maroon_pedestal" },
-  { output: "reliquary:pedestals/rose_pedestal" },
-  { output: "reliquary:pedestals/coral_pedestal" },
-  { output: "reliquary:pedestals/indigo_pedestal" },
-  { output: "reliquary:pedestals/navy_pedestal" },
-  { output: "reliquary:pedestals/slate_pedestal" },
-  { output: "reliquary:pedestals/olive_pedestal" },
-  { output: "reliquary:pedestals/amber_pedestal" },
-  { output: "reliquary:pedestals/beige_pedestal" },
-  { output: "reliquary:pedestals/teal_pedestal" },
-  { output: "reliquary:pedestals/mint_pedestal" },
-  { output: "reliquary:pedestals/aqua_pedestal" },
-  { output: "reliquary:pedestals/verdant_pedestal" },
-  { output: "reliquary:pedestals/forest_pedestal" },
-  { output: "reliquary:pedestals/ginger_pedestal" },
-  { output: "reliquary:pedestals/tan_pedestal" },
-  { output: "reliquary:pedestals/passive/maroon_passive_pedestal" },
-  { output: "reliquary:pedestals/passive/rose_passive_pedestal" },
-  { output: "reliquary:pedestals/passive/coral_passive_pedestal" },
-  { output: "reliquary:pedestals/passive/indigo_passive_pedestal" },
-  { output: "reliquary:pedestals/passive/navy_passive_pedestal" },
-  { output: "reliquary:pedestals/passive/slate_passive_pedestal" },
-  { output: "reliquary:pedestals/passive/olive_passive_pedestal" },
-  { output: "reliquary:pedestals/passive/amber_passive_pedestal" },
-  { output: "reliquary:pedestals/passive/beige_passive_pedestal" },
-  { output: "reliquary:pedestals/passive/teal_passive_pedestal" },
-  { output: "reliquary:pedestals/passive/mint_passive_pedestal" },
-  { output: "reliquary:pedestals/passive/aqua_passive_pedestal" },
-  { output: "reliquary:pedestals/passive/verdant_passive_pedestal" },
-  { output: "reliquary:pedestals/passive/forest_passive_pedestal" },
-  { output: "reliquary:pedestals/passive/ginger_passive_pedestal" },
-  { output: "reliquary:pedestals/passive/tan_passive_pedestal" }
+  { output: "brewery:rope" },
 ];
 
-ServerEvents.recipes((e) => {
-  recipeRemovals.forEach((recipe) => {
-    e.remove(recipe);
+const dyeDepotItems = ["present", "trapped_present", "candle_holder", "flag"];
+
+const createdecoItems = ["shipping_container", "placard"];
+
+const numismaticsItems = ["card", "id_card"];
+
+const railwaysItems = ["conductor_cap", "incomplete_conductor_cap"];
+
+const createItems = ["seat", "toolbox", "valve_handle"];
+
+const reliquaryItems = ["pedestals", "passive_pedestals"];
+
+const colors = [
+  "maroon",
+  "rose",
+  "coral",
+  "indigo",
+  "navy",
+  "slate",
+  "olive",
+  "amber",
+  "beige",
+  "teal",
+  "mint",
+  "aqua",
+  "verdant",
+  "forest",
+  "ginger",
+  "tan",
+];
+
+colors.forEach((color) => {
+  dyeDepotItems.forEach((item) => {
+    recipeRemovals.push({ output: `supplementaries:${item}_${color}` });
   });
+
+  createdecoItems.forEach((item) => {
+    recipeRemovals.push({ output: `createdeco:${color}_${item}` });
+  });
+
+  numismaticsItems.forEach((item) => {
+    recipeRemovals.push({ output: `numismatics:${color}_${item}` });
+  });
+
+  railwaysItems.forEach((item) => {
+    recipeRemovals.push({ output: `railways:${color}_${item}` });
+  });
+
+  createItems.forEach((item) => {
+    recipeRemovals.push({ output: `create:${color}_${item}` });
+  });
+
+  reliquaryItems.forEach((item) => {
+    recipeRemovals.push({ output: `reliquary:pedestals/${color}_pedestal` });
+    recipeRemovals.push({
+      output: `reliquary:pedestals/passive/${color}_passive_pedestal`,
+    });
+  });
+});
+
+ServerEvents.recipes((e) => {
+  recipeRemovals.forEach((recipe) => e.remove(recipe));
 });
