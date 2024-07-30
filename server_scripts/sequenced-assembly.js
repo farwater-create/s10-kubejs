@@ -89,7 +89,7 @@ ServerEvents.recipes((e) => {
   e.recipes.create
     .sequenced_assembly(
       [Item.of("create:kinetic_mechanism")],
-      Ingredient.of("#minecraft:wooden_slabs"),
+      Item.of("ars_nouveau:archwood_slab"),
       [
         e.recipes.create.deploying(t, [t, "create:andesite_alloy"]),
         e.recipes.create.deploying(t, [t, "create:andesite_alloy"]),
@@ -108,6 +108,24 @@ ServerEvents.recipes((e) => {
         e.recipes.create.deploying(t, [t, "create:electron_tube"]),
         e.recipes.create.deploying(t, [t, "create:electron_tube"]),
         e.recipes.create.deploying(t, [t, "tfmg:screwdriver"]),
+      ]
+    )
+    .transitionalItem(t)
+    .loops(1);
+
+  t = "create:incomplete_abstruse_mechanism";
+  e.recipes.create
+    .sequenced_assembly(
+      [Item.of("create:abstruse_mechanism")],
+      Item.of("create:precision_mechanism"),
+      [
+        e.recipes.create.deploying(t, [t, "createutilities:graviton_tube"]),
+        e.recipes.create.deploying(t, [t, "minecraft:echo_shard"]),
+        e.recipes.create.deploying(t, [t, "tfmg:screwdriver"]),
+        e.recipes.create.filling(t, [
+          Fluid.of("create_central_kitchen:dragon_breath", 20),
+          t,
+        ]),
       ]
     )
     .transitionalItem(t)

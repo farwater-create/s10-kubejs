@@ -1,23 +1,23 @@
-const jeiRemovals = [
+let jeiRemovals = [
   "tfmg:quad_potato_cannon",
   "create:potato_cannon",
   "ae2:inscriber",
   "cataclysm:ignitium_elytra_chestplate",
 ];
 
-const dyeDepotItems = ["present", "trapped_present", "candle_holder", "flag"];
+let jeiDyeDepotItems = ["present", "trapped_present", "candle_holder", "flag"];
 
-const createdecoItems = ["shipping_container", "placard"];
+let jeiCreatedecoItems = ["shipping_container", "placard"];
 
-const numismaticsItems = ["card", "id_card"];
+let jeiNumismaticsItems = ["card", "id_card"];
 
-const railwaysItems = ["conductor_cap", "incomplete_conductor_cap"];
+let jeiRailwaysItems = ["conductor_cap", "incomplete_conductor_cap"];
 
-const createItems = ["seat", "toolbox", "valve_handle"];
+let jeiCreateItems = ["seat", "toolbox", "valve_handle"];
 
-const reliquaryItems = ["pedestals", "passive_pedestals"];
+let jeiReliquaryItems = ["pedestals", "passive_pedestals"];
 
-const colors = [
+let jeiColors = [
   "maroon",
   "rose",
   "coral",
@@ -36,28 +36,28 @@ const colors = [
   "tan",
 ];
 
-colors.forEach((color) => {
-  dyeDepotItems.forEach((item) => {
+jeiColors.forEach((color) => {
+  jeiDyeDepotItems.forEach((item) => {
     jeiRemovals.push(`supplementaries:${item}_${color}`);
   });
 
-  createdecoItems.forEach((item) => {
+  jeiCreatedecoItems.forEach((item) => {
     jeiRemovals.push(`createdeco:${color}_${item}`);
   });
 
-  numismaticsItems.forEach((item) => {
+  jeiNumismaticsItems.forEach((item) => {
     jeiRemovals.push(`numismatics:${color}_${item}`);
   });
 
-  railwaysItems.forEach((item) => {
+  jeiRailwaysItems.forEach((item) => {
     jeiRemovals.push(`railways:${color}_${item}`);
   });
 
-  createItems.forEach((item) => {
+  jeiCreateItems.forEach((item) => {
     jeiRemovals.push(`create:${color}_${item}`);
   });
 
-  reliquaryItems.forEach((item) => {
+  jeiReliquaryItems.forEach((item) => {
     jeiRemovals.push(`reliquary:pedestals/${color}_pedestal`);
     jeiRemovals.push(`reliquary:pedestals/passive/${color}_passive_pedestal`);
   });

@@ -27,7 +27,7 @@ ServerEvents.recipes((e) => {
   );
 
   e.recipes.create.compacting(
-    [Fluid.of("farwater:liquid_rubber", 100)],
-    [Item.of("farwater:cured_rubber", 1)]
+    [Item.of("farwater:cured_rubber", 1)],
+    [Fluid.of("farwater:liquid_rubber", 100)]
   );
 });

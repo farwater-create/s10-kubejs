@@ -2,8 +2,8 @@ ServerEvents.recipes((event) => {
   // event.shapeless("dye_depot:indigo_dye", ["herbalbrews:lavender"]);
   event
     .shapeless("create:makeshift_kinetic_mechanism", [
-      "2x #forge:stripped_logs",
-      Item.of("farwater:saw").ignoreNBT(),
+      "2x #farwater:magic_logs",
+      Item.of("farwater:saw"),
       "3x create:andesite_alloy",
     ])
     .damageIngredient(Item.of("farwater:saw"));
@@ -26,6 +26,7 @@ ServerEvents.recipes((event) => {
 
   event.shapeless("ars_nouveau:archmage_spell_book", [
     "ars_nouveau:apprentice_spell_book",
+    "minecraft:nether_star",
     "forbidden_arcanus:eternal_stella",
     "ars_nouveau:wilden_tribute",
   ]);

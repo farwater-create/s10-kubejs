@@ -9,16 +9,7 @@ const recipeRemovals = [
   { output: "ars_nouveau:magebloom_crop" },
   { output: "ars_nouveau:source_gem", type: "ars_nouveau:imbuement" },
   {
-    output: "ars_nouveau:novice_spell_book",
-    type: "minecraft:crafting_shapeless",
-  },
-  {
-    output: "ars_nouveau:apprentice_spell_book",
-    type: "minecraft:crafting_shapeless",
-  },
-  {
     output: "ars_nouveau:archmage_spell_book",
-    type: "minecraft:crafting_shapeless",
   },
   { output: "ars_nouveau:magebloom_fiber" },
   { output: "forbidden_arcanus:ender_pearl_fragment" },
@@ -30,7 +21,6 @@ const recipeRemovals = [
   { type: "create:pressing", output: "ethuim:ethium_sheet" },
   { output: "create:fluid_pipe", type: "minecraft:crafting_shaped" },
   { output: "create_sa:steam_engine" },
-  { output: "createutilities:void_steel_ingot" },
   { output: "minecraft:emerald", type: "vintageimprovements:curving" },
   { output: "ae2:printed_logic_processor" },
   { output: "ae2:printed_engineering_processor" },

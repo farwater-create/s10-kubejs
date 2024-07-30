@@ -17,11 +17,11 @@ ServerEvents.recipes((e) => {
 
   e.recipes.create.deploying(
     ["ae2:sky_stone_block"],
-    ["#forge:stone", "#farwater:air_focus"]
+    ["occultism:otherstone", "ars_nouveau:air_essence"]
   );
 
   itemApplication(
-    [{ tag: "forge:stone" }, { tag: "farwater:air_focus" }],
+    [{ item: "occultism:otherstone" }, { item: "ars_nouveau:air_essence" }],
     [{ item: "ae2:sky_stone_block" }]
   );
 });

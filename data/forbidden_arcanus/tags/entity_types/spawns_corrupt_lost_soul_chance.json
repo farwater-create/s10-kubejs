@@ -1,0 +1,17 @@
+{
+  "values": [
+    "#minecraft:skeletons",
+    "minecraft:zombie",
+    "minecraft:zombie_villager",
+    "minecraft:witch",
+    "minecraft:drowned",
+    "minecraft:pillager",
+    "minecraft:illusioner",
+    "minecraft:vindicator",
+    "minecraft:husk",
+    "minecraft:piglin",
+    "minecraft:piglin_brute",
+    "minecraft:evoker",
+    "#twilightforest:bosses"
+  ]
+}

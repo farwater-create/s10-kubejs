@@ -1,20 +1,4 @@
 ServerEvents.recipes((event) => {
-  event.recipes.ars_nouveau.enchanting_apparatus(
-    [
-      "alexsmobs:void_worm_eye",
-      "minecraft:ender_pearl",
-      "forbidden_arcanus:dark_matter",
-      "forbidden_arcanus:dark_matter",
-      "forbidden_arcanus:dark_matter",
-      "forbidden_arcanus:dark_matter",
-      "forbidden_arcanus:dark_matter",
-      "minecraft:ender_pearl",
-    ],
-    "twilightforest:knightmetal_ingot",
-    "createutilities:void_steel_ingot",
-    10000 // may want to alter source cost
-  );
-
   event.recipes.ars_nouveau.imbuement(
     "create:iron_sheet", // input item
     "ae2:calculation_processor_press", // output

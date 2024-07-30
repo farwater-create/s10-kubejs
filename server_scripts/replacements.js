@@ -1,5 +1,11 @@
 ServerEvents.recipes((e) => {
   e.replaceInput(
+    { mod: "createutilities" }, // Arg 1: the filter
+    "createutilities:graviton_tube", // Arg 2: the item to replace
+    "create:abstruse_mechanism" // Arg 3: the item to replace it with
+  );
+
+  e.replaceInput(
     { mod: "ars_nouveau" }, // Arg 1: the filter
     "minecraft:gold_ingot", // Arg 2: the item to replace
     "farwater:enchanted_golden_sheet" // Arg 3: the item to replace it with

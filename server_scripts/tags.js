@@ -19,4 +19,10 @@ ServerEvents.tags("item", (event) => {
 
   event.add("farwater:air_focus", "ars_elemental:air_focus");
   event.add("farwater:air_focus", "ars_elemental:lesser_air_focus");
+
+  event.add("farwater:magic_logs", "ars_nouveau:yellow_archwood_log");
+  event.add("farwater:magic_logs", "ars_nouveau:blue_archwood_log");
+  event.add("farwater:magic_logs", "ars_nouveau:red_archwood_log");
+  event.add("farwater:magic_logs", "ars_nouveau:purple_archwood_log");
+  event.add("farwater:magic_logs", "ars_nouveau:green_archwood_log");
 });

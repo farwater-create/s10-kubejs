@@ -1,0 +1,32 @@
+{
+  "replace": true,
+  "values": [
+    "minecraft:wither",
+    "minecraft:ender_dragon",
+    "minecraft:elder_guardian",
+    "cataclysm:ender_golem",
+    "cataclysm:ender_guardian",
+    "cataclysm:nether_monstrosity",
+    "cataclysm:ignis",
+    "cataclysm:ignited_berserker",
+    "cataclysm:ignited_revenant",
+    "cataclysm:nameless_sorcerer",
+    "cataclysm:coralssus",
+    "cataclysm:amethyst_crab",
+    "cataclysm:kobolediator",
+    "cataclysm:wadjet",
+    "cataclysm:ancient_remnant",
+    "cataclysm:deepling_brute",
+    "cataclysm:deepling_angler",
+    "cataclysm:deepling_priest",
+    "cataclysm:deepling_warlock",
+    "cataclysm:deepling_brute",
+    "cataclysm:coral_golem",
+    "cataclysm:the_baby_leviathan",
+    "cataclysm:the_leviathan",
+    "cataclysm:the_harbinger",
+    "cataclysm:the_prowler",
+    "alexsmobs:warped_mosco",
+    "alexsmobs:void_worm"
+  ]
+}
