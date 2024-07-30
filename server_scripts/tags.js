@@ -25,4 +25,9 @@ ServerEvents.tags("item", (event) => {
   event.add("farwater:magic_logs", "ars_nouveau:red_archwood_log");
   event.add("farwater:magic_logs", "ars_nouveau:purple_archwood_log");
   event.add("farwater:magic_logs", "ars_nouveau:green_archwood_log");
+
+  event.add("ae2:budding_quartz", "ae2:damaged_budding_quartz");
+  event.add("ae2:budding_quartz", "ae2:flawed_budding_quartz");
+  event.add("ae2:budding_quartz", "ae2:chipped_budding_quartz");
+  event.add("ae2:budding_quartz", "ae2:flawless_budding_quartz");
 });

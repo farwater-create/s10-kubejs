@@ -4,6 +4,7 @@
     "minecraft:wither",
     "minecraft:ender_dragon",
     "minecraft:elder_guardian",
+    "minecraft:warden",
     "cataclysm:ender_golem",
     "cataclysm:ender_guardian",
     "cataclysm:nether_monstrosity",
@@ -27,6 +28,19 @@
     "cataclysm:the_harbinger",
     "cataclysm:the_prowler",
     "alexsmobs:warped_mosco",
-    "alexsmobs:void_worm"
+    "alexsmobs:void_worm",
+    "twilightforest:naga",
+    "twilightforest:lich",
+    "twilightforest:hydra",
+    "twilightforest:ur_ghast",
+    "twilightforest:snow_queen",
+    "twilightforest:quest_ram",
+    "twilightforest:yeti",
+    "twilightforest:alpha_yeti",
+    "twilightforest:knight_phantom",
+    "twilightforest:minoshroom",
+    "twilightforest:giant_miner",
+    "twilightforest:king_spider",
+    "twilightforest:plateau_boss"
   ]
 }

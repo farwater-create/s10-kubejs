@@ -1,4 +1,5 @@
 const recipeRemovals = [
+  { output: "vintageimprovements:laser" },
   { output: "minecraft:ender_pearl" },
   { output: "minecraft:ender_eye", type: "minecraft:crafting_shapeless" },
   { output: "cataclysm:meat_shredder" },
@@ -13,6 +14,7 @@ const recipeRemovals = [
   },
   { output: "ars_nouveau:magebloom_fiber" },
   { output: "forbidden_arcanus:ender_pearl_fragment" },
+  { output: "forbidden_arcanus:quantum_catcher" },
   { output: "create:polished_rose_quartz", type: "create:deploying" },
   { output: "create:crafting_blueprint" },
   { output: "create:potato_cannon" },

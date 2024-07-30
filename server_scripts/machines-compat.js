@@ -9,7 +9,7 @@ ServerEvents.recipes((event) => {
         )} from ${machine}`
       );
       if (remove_old) {
-        event.remove({ output: entry[1] });
+        // event.remove({ output: entry[1] });
       }
       event.smithing(entry[1], "create:crafting_blueprint", machine, entry[0]);
       if (
@@ -28,7 +28,7 @@ ServerEvents.recipes((event) => {
     outputs.forEach((output) => {
       console.log(`${Item.of(input)} to ${Item.of(output)}`);
       if (remove_old) {
-        event.remove({ output: output });
+        // event.remove({ output: output });
       }
       event.stonecutting(output, input);
       if (output.toString().startsWith("x ", 1)) {
@@ -46,6 +46,7 @@ ServerEvents.recipes((event) => {
     ["create:whisk", "create:mechanical_mixer"],
     ["create:brass_hand", "create:deployer"],
     ["createaddition:copper_rod", Item.of("createaddition:connector", 4)],
+    ["create:crushing_wheel", Item.of("create:mechanical_roller", 2)],
     ["createaddition:capacitor", "createaddition:alternator"],
     ["create:mechanical_piston", "vintageimprovements:vibrating_table"],
     ["vintageimprovements:grinder_belt", "vintageimprovements:belt_grinder"],
@@ -63,12 +64,11 @@ ServerEvents.recipes((event) => {
     Item.of("create:andesite_funnel", 4),
     Item.of("create:andesite_tunnel", 4),
     Item.of("create:weighted_ejector", 2),
-    Item.of("create:mechanical_roller", 2),
     Item.of("createaddition:rolling_mill", 1),
     Item.of("create_mechanical_extruder:mechanical_extruder", 1),
     Item.of("vintageimprovements:centrifuge", 1),
     Item.of("vintageimprovements:curving_press", 1),
-    Item.of("sliceanddice:slicer", 1)
+    Item.of("sliceanddice:slicer", 1),
   ];
   multicut(andesite_machines_cutting, "create:andesite_machine", true);
 
@@ -97,10 +97,12 @@ ServerEvents.recipes((event) => {
 
   const brass_smithing = [
     ["minecraft:crafting_table", Item.of("create:mechanical_crafter", 4)],
+    ["minecraft:comparator", Item.of("create:stockpile_switch", 2)],
     ["createaddition:electrum_rod", "createaddition:tesla_coil"],
     ["createaddition:capacitor", "createaddition:modular_accumulator"],
     ["createaddition:connector", "createaddition:portable_energy_interface"],
     ["create:rotation_speed_controller", "createaddition:electric_motor"],
+    ["vintageimprovements:laser_item", "vintageimprovements:laser"],
   ];
   machine_smithing(brass_smithing, "create:brass_machine", true);
 
@@ -108,7 +110,6 @@ ServerEvents.recipes((event) => {
     Item.of("create:sequenced_gearshift", 2),
     Item.of("create:rotation_speed_controller", 1),
     Item.of("create:mechanical_arm", 1),
-    Item.of("create:stockpile_switch", 2),
     Item.of("create:content_observer", 2),
     Item.of("create:brass_funnel", 4),
     Item.of("create:brass_tunnel", 4),
@@ -116,8 +117,8 @@ ServerEvents.recipes((event) => {
     Item.of("create:display_board", 6),
   ];
   multicut(brass_machines_cutting, "create:brass_machine", true);
-  
-const locomotive_machines_cutting = [
+
+  const locomotive_machines_cutting = [
     Item.of("railways:track_coupler", 1),
     Item.of("create:controls", 1),
     Item.of("create:track_observer", 3),
@@ -125,6 +126,6 @@ const locomotive_machines_cutting = [
     Item.of("create:track_signal", 4),
     Item.of("railways:portable_fuel_interface", 2),
   ];
-  
+
   multicut(locomotive_machines_cutting, "create:locomotive_machine", true);
 });
