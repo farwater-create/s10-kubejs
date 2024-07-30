@@ -92,7 +92,6 @@ ServerEvents.recipes((e) => {
       )
       .heated()
       .processingTime(10 * 20); // ticks
-  };
 
   let tier2Upgrade = (item) => {
     e.recipes.create
