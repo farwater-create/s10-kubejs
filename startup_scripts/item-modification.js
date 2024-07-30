@@ -13,6 +13,25 @@ ItemEvents.modification((event) => {
     item.burnTime = 3 * 60 * 20;
   });
 
+    let machine = (name) => {
+    let id = name.toLowerCase();
+    event.modify("create:" + id + "_machine", item => {
+    item.maxStackSize = 64
+    item.rarity = 'RARE'
+  })
+  };
+
+  machine("Andesite");
+  machine("Brass");
+  machine("Sealed");
+  machine("Locomotive");
+
+    event.modify('minecraft:egg', item => {
+    item.foodProperties = food => {
+        food.hunger(2)
+        food.saturation(3)
+    }
+  
   let manaArmor = [
     ["twilightforest:ironwood_helmet", 10],
     ["twilightforest:ironwood_chestplate", 15],
