@@ -83,6 +83,17 @@ ServerEvents.recipes((e) => {
     .heated()
     .processingTime(10 * 20); // ticks
 
+
+  e.recipes.create
+      .mixing(
+        [Item.of("tfmg:cast_iron_ingot",1)], // output
+
+        [Item.of("minecraft:iron_ingot", 1), Item.of("minecraft:charcoal", 1)] // input
+      )
+      .heated()
+      .processingTime(10 * 20); // ticks
+  };
+
   let tier2Upgrade = (item) => {
     e.recipes.create
       .mixing(
