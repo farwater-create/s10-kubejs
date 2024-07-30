@@ -14,4 +14,5 @@ StartupEvents.registry("block", (event) => {
   machine("Andesite", "solid");
   machine("Brass", "translucent");
   machine("Sealed", "cutout");
+  machine("Locomotive", "solid");
 });
