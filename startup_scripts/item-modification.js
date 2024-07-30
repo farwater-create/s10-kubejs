@@ -26,7 +26,7 @@ ItemEvents.modification((event) => {
   machine("Sealed");
   machine("Locomotive");
 
-    event.modify('minecraft:egg', item => {
+    event.modify('minecraft:honey_block', item => {
     item.foodProperties = food => {
         food.hunger(2)
         food.saturation(3)
