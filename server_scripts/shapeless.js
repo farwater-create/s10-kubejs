@@ -51,8 +51,8 @@ ServerEvents.recipes((event) => {
     "create:brass_casing",
   ]);
 
-  event.shapeless("create:brass_machine", [
-    "4x create:infernal_mechanism",
+  event.shapeless("create:locomotive_machine", [
+    "2x create:infernal_mechanism",
     "create:railway_casing",
   ]);
 });
