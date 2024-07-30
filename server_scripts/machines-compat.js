@@ -68,6 +68,7 @@ ServerEvents.recipes((event) => {
     Item.of("create_mechanical_extruder:mechanical_extruder", 1),
     Item.of("vintageimprovements:centrifuge", 1),
     Item.of("vintageimprovements:curving_press", 1),
+    Item.of("sliceanddice:slicer", 1)
   ];
   multicut(andesite_machines_cutting, "create:andesite_machine", true);
 
@@ -115,4 +116,15 @@ ServerEvents.recipes((event) => {
     Item.of("create:display_board", 6),
   ];
   multicut(brass_machines_cutting, "create:brass_machine", true);
+  
+const locomotive_machines_cutting = [
+    Item.of("railways:track_coupler", 1),
+    Item.of("create:controls", 1),
+    Item.of("create:track_observer", 3),
+    Item.of("create:track_station", 2),
+    Item.of("create:track_signal", 4),
+    Item.of("railways:portable_fuel_interface", 2),
+  ];
+  
+  multicut(locomotive_machines_cutting, "create:locomotive_machine", true);
 });
