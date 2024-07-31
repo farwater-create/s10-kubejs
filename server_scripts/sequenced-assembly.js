@@ -178,7 +178,7 @@ ServerEvents.recipes((e) => {
     )
     .transitionalItem(t)
     .loops(1);
-  
+
   t = "create:incomplete_infernal_mechanism";
   e.recipes.create
     .sequenced_assembly(
@@ -186,7 +186,6 @@ ServerEvents.recipes((e) => {
       Item.of("vintageimprovements:cast_iron_sheet"),
       [
         e.recipes.create.deploying(t, [t, "minecraft:quartz"]),
-        e.recipes.create.deploying(t, [t, "minecraft:redstone"]),
         e.recipes.create.deploying(t, [t, "createaddition:iron_rod"]),
         e.recipes.create.deploying(t, [t, "vintageimprovements:blaze_spring"]),
         e.recipes.create.deploying(t, [t, "tfmg:screw"]),
