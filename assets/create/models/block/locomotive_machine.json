@@ -2,8 +2,8 @@
   "credit": "Made with Blockbench",
   "texture_size": [64, 64],
   "textures": {
-    "0": "farwater:block/locomotive_machine",
-    "particle": "farwater:block/locomotive_machine"
+    "0": "create:block/locomotive_machine",
+    "particle": "create:block/locomotive_machine"
   },
   "elements": [
     {
