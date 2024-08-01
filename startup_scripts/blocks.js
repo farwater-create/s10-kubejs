@@ -5,7 +5,8 @@ StartupEvents.registry("block", (event) => {
     .material("lantern")
     .renderType("solid")
     .hardness(1.0)
-    .notSolid();
+    .notSolid()
+    .box(x5, y0, z5, x11, y12, z11);
 
   let machine = (name, layer) => {
     let id = name.toLowerCase();
