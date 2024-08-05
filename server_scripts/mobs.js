@@ -1,4 +1,9 @@
-let bannedMobs = ["minecraft:creeper"];
+let bannedMobs = [
+  "minecraft:creeper",
+  "realmrpg_creep:creepling",
+  "realmrpg_creep:halloweed",
+  "realmrpg_demons:chort",
+];
 
 let bannedWorldMobs = [
   //   {

@@ -103,6 +103,7 @@ ServerEvents.recipes((event) => {
     ["createaddition:connector", "createaddition:portable_energy_interface"],
     ["create:rotation_speed_controller", "createaddition:electric_motor"],
     ["vintageimprovements:laser_item", "vintageimprovements:laser"],
+    ["create:calculation_mechanism", "ae2:inscriber"],
   ];
   machine_smithing(brass_smithing, "create:brass_machine", true);
 

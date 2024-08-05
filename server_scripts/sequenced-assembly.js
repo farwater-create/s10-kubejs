@@ -1,69 +1,66 @@
 ServerEvents.recipes((e) => {
-  let t = "createappliedkinetics:incomplete_calculation_processor";
+  let t = "create:incomplete_calculation_mechanism";
   e.recipes.create
     .sequenced_assembly(
-      [Item.of("ae2:calculation_processor")],
-      Item.of("ae2:printed_silicon"),
+      [Item.of("create:calculation_mechanism")],
+      Item.of("create:precision_mechanism"),
       [
+        e.recipes.create.deploying(t, [t, Item.of("ae2:fluix_crystal")]),
         e.recipes.create.deploying(t, [
           t,
-          Item.of("ae2:printed_calculation_processor"),
-        ]),
-        e.recipes.create.deploying(t, [
-          t,
-          "#vintageimprovements:small_springs",
+          "vintageimprovements:aluminum_spring",
         ]),
         e.recipes.create.deploying(t, [t, "#forge:wires"]),
-        e.recipes.create.deploying(t, [t, Item.of("tfmg:screw")]),
+        e.recipes.create.deploying(t, [t, Item.of("ae2:printed_silicon")]),
         e.recipes.create.pressing(t, t),
       ]
     )
     .transitionalItem(t)
     .loops(1);
 
-  t = "createappliedkinetics:incomplete_logic_processor";
-  e.recipes.create
-    .sequenced_assembly(
-      [Item.of("ae2:logic_processor")],
-      Item.of("ae2:printed_silicon"),
-      [
-        e.recipes.create.deploying(t, [
-          t,
-          Item.of("ae2:printed_logic_processor"),
-        ]),
-        e.recipes.create.deploying(t, [
-          t,
-          "#vintageimprovements:small_springs",
-        ]),
-        e.recipes.create.deploying(t, [t, "#forge:wires"]),
-        e.recipes.create.deploying(t, [t, Item.of("tfmg:screw")]),
-        e.recipes.create.pressing(t, t),
-      ]
-    )
-    .transitionalItem("createappliedkinetics:incomplete_engineering_processor")
-    .loops(1);
+  // t = "createappliedkinetics:incomplete_logic_processor";
+  // e.recipes.create
+  //   .sequenced_assembly(
+  //     [Item.of("ae2:logic_processor")],
+  //     Item.of("ae2:printed_silicon"),
+  //     [
+  //       e.recipes.create.deploying(t, [
+  //         t,
+  //         Item.of("ae2:printed_logic_processor"),
+  //       ]),
+  //       e.recipes.create.deploying(t, [
+  //         t,
+  //         "#vintageimprovements:small_springs",
+  //       ]),
+  //       e.recipes.create.deploying(t, [t, "#forge:wires"]),
+  //       e.recipes.create.deploying(t, [t, Item.of("tfmg:screw")]),
+  //       e.recipes.create.pressing(t, t),
+  //     ]
+  //   )
+  //   .transitionalItem("createappliedkinetics:incomplete_engineering_processor")
+  //   .loops(1);
 
-  t = "createappliedkinetics:incomplete_engineering_processor";
-  e.recipes.create
-    .sequenced_assembly(
-      [Item.of("ae2:engineering_processor")],
-      Item.of("ae2:printed_silicon"),
-      [
-        e.recipes.create.deploying(t, [
-          t,
-          Item.of("ae2:printed_engineering_processor"),
-        ]),
-        e.recipes.create.deploying(t, [
-          t,
-          "#vintageimprovements:small_springs",
-        ]),
-        e.recipes.create.deploying(t, [t, "#forge:wires"]),
-        e.recipes.create.deploying(t, [t, Item.of("tfmg:screw")]),
-        e.recipes.create.pressing(t, t),
-      ]
-    )
-    .transitionalItem(t)
-    .loops(1);
+  // t = "createappliedkinetics:incomplete_engineering_processor";
+  // e.recipes.create
+  //   .sequenced_assembly(
+  //     [Item.of("ae2:engineering_processor")],
+  //     Item.of("ae2:printed_silicon"),
+  //     [
+  //       e.recipes.create.deploying(t, [
+  //         t,
+  //         Item.of("ae2:printed_engineering_processor"),
+  //       ]),
+  //       e.recipes.create.deploying(t, [
+  //         t,
+  //         "#vintageimprovements:small_springs",
+  //       ]),
+  //       e.recipes.create.deploying(t, [t, "#forge:wires"]),
+  //       e.recipes.create.deploying(t, [t, Item.of("tfmg:screw")]),
+  //       e.recipes.create.pressing(t, t),
+  //     ]
+  //   )
+  //   .transitionalItem(t)
+  //   .loops(1);
 
   t = "farwater:incomplete_enchanted_golden_sheet";
   e.recipes.create
@@ -186,9 +183,8 @@ ServerEvents.recipes((e) => {
       Item.of("vintageimprovements:cast_iron_sheet"),
       [
         e.recipes.create.deploying(t, [t, "minecraft:quartz"]),
-        e.recipes.create.deploying(t, [t, "createaddition:iron_rod"]),
+        e.recipes.create.deploying(t, [t, "minecraft:blaze_rod"]),
         e.recipes.create.deploying(t, [t, "vintageimprovements:blaze_spring"]),
-        e.recipes.create.deploying(t, [t, "tfmg:screw"]),
         e.recipes.create.deploying(t, [t, "tfmg:screwdriver"]),
       ]
     )

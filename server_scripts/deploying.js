@@ -8,14 +8,6 @@ ServerEvents.recipes((e) => {
   };
 
   e.recipes.create.deploying(
-    [
-      "ars_nouveau:magebloom_fiber",
-      Item.of("ars_nouveau:magebloom_fiber").withChance(0.6), // output
-    ],
-    ["ars_nouveau:magebloom", "#forge:tools/knives"] // input
-  );
-
-  e.recipes.create.deploying(
     ["ae2:sky_stone_block"],
     ["occultism:otherstone", "ars_nouveau:air_essence"]
   );

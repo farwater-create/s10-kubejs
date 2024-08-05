@@ -51,11 +51,7 @@ ServerEvents.recipes((event) => {
     .id("kubejs:tuff_vein");
   event.recipes.createoreexcavation
     .drilling(
-      [
-        Item.of("minecraft:tuff").withChance(0.9),
-        Item.of("createoreexcavation:raw_emerald").withChance(0.002),
-        Item.of("createoreexcavation:raw_diamond").withChance(0.001),
-      ],
+      [Item.of("minecraft:tuff").withChance(0.9)],
       "kubejs:tuff_vein",
       600
     )

@@ -29,5 +29,10 @@ ServerEvents.tags("item", (event) => {
   event.add("ae2:budding_quartz", "ae2:damaged_budding_quartz");
   event.add("ae2:budding_quartz", "ae2:flawed_budding_quartz");
   event.add("ae2:budding_quartz", "ae2:chipped_budding_quartz");
-  event.add("ae2:budding_quartz", "ae2:flawless_budding_quartz");
+  event.add("ae2:budding_quartz", "minecraft:quartz_block");
+});
+
+ServerEvents.tags("fluid", (event) => {
+  event.add("farwater:source_mixtures", "farwater:source_mixture");
+  event.add("farwater:source_mixtures", "starbunclemania:source_fluid");
 });

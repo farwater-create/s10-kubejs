@@ -83,36 +83,30 @@ ServerEvents.recipes((e) => {
     .heated()
     .processingTime(10 * 20); // ticks
 
+  e.recipes.create
+    .mixing(
+      [Item.of("tfmg:cast_iron_ingot", 1)], // output
+
+      [Item.of("minecraft:iron_ingot", 1), Item.of("minecraft:charcoal", 1)] // input
+    )
+    .heated()
+    .processingTime(10 * 20); // ticks
 
   e.recipes.create
-      .mixing(
-        [Item.of("tfmg:cast_iron_ingot",1)], // output
+    .mixing(
+      [Fluid.of("farwater:blazing_blood", 150)], // output
 
-        [Item.of("minecraft:iron_ingot", 1), Item.of("minecraft:charcoal", 1)] // input
-      )
-      .heated()
-      .processingTime(10 * 20); // ticks
+      [Item.of("minecraft:blaze_powder", 1)] // input
+    )
+    .heated()
+    .processingTime(8 * 20); // ticks
 
-  let tier2Upgrade = (item) => {
-    e.recipes.create
-      .mixing(
-        [Item.of(item, '{Damage:0,an_stack_perks:{color:"",perks:[],tier:1}}')], // output
+  e.recipes.create
+    .mixing(
+      [Fluid.of("farwater:blazing_blood", 300)], // output
 
-        [Item.of(item, 1), Fluid.of("farwater:source_mixture", 1000)] // input
-      )
-      .processingTime(10 * 20); // ticks
-  };
-
-  tier2Upgrade("ars_nouveau:sorcerer_hood");
-  tier2Upgrade("ars_nouveau:sorcerer_robes");
-  tier2Upgrade("ars_nouveau:sorcerer_leggings");
-  tier2Upgrade("ars_nouveau:sorcerer_boots");
-  tier2Upgrade("ars_nouveau:arcanist_hood");
-  tier2Upgrade("ars_nouveau:arcanist_robes");
-  tier2Upgrade("ars_nouveau:arcanist_leggings");
-  tier2Upgrade("ars_nouveau:arcanist_boots");
-  tier2Upgrade("ars_nouveau:battlemage_hood");
-  tier2Upgrade("ars_nouveau:battlemage_robes");
-  tier2Upgrade("ars_nouveau:battlemage_leggings");
-  tier2Upgrade("ars_nouveau:battlemage_boots");
+      [Item.of("minecraft:blaze_rod", 1)] // input
+    )
+    .heated()
+    .processingTime(8 * 20); // ticks
 });

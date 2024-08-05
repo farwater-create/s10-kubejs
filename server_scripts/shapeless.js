@@ -21,7 +21,7 @@ ServerEvents.recipes((event) => {
   event.shapeless("ars_nouveau:apprentice_spell_book", [
     "ars_nouveau:novice_spell_book",
     "forbidden_arcanus:aureal_bottle",
-    "farwater:source_mixture_bottle",
+    "farwater:source_mixture_bucket",
   ]);
 
   event.shapeless("ars_nouveau:archmage_spell_book", [

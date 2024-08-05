@@ -18,4 +18,19 @@ ServerEvents.recipes((e) => {
     Ingredient.of("#forge:seeds", 1),
     Fluid.of("farwater:sourceberry_juice", 100),
   ]);
+
+  e.recipes.create.filling(Item.of("create:blaze_cake", 1), [
+    Item.of("create:blaze_cake_base"),
+    Fluid.of("farwater:blazing_blood", 150),
+  ]);
+
+  e.recipes.create.filling(Item.of("farwater:blaze_core", 1), [
+    Item.of("tfmg:steel_fluid_tank"),
+    Fluid.of("farwater:blazing_blood", 1000),
+  ]);
+
+  e.recipes.create.filling(Item.of("minecraft:blaze_rod", 2), [
+    Item.of("#c:wooden_rods", 2),
+    Fluid.of("farwater:blazing_blood", 500),
+  ]);
 });
