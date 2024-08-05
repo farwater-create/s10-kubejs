@@ -9,7 +9,7 @@ ServerEvents.recipes((event) => {
         )} from ${machine}`
       );
       if (remove_old) {
-        event.remove({ output: entry[1] });
+        // event.remove({ output: entry[1] });
       }
       event.smithing(entry[1], "create:crafting_blueprint", machine, entry[0]);
       if (
@@ -28,7 +28,7 @@ ServerEvents.recipes((event) => {
     outputs.forEach((output) => {
       console.log(`${Item.of(input)} to ${Item.of(output)}`);
       if (remove_old) {
-        // event.remove({ output: output });
+        event.remove({ output: output });
       }
       event.stonecutting(output, input);
       if (output.toString().startsWith("x ", 1)) {
