@@ -2,8 +2,8 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [64, 64],
 	"textures": {
-		"1": "locomotive_machine",
-		"particle": "locomotive_machine"
+		"1": "create:block/locomotive_machine",
+		"particle": "create:block/locomotive_machine"
 	},
 	"elements": [
 		{
