@@ -12,7 +12,15 @@ ItemEvents.tooltip((e) => {
       tooltip: "Certus Quartz can be harvested from a Flawless Budding Quartz.",
     },
     {
-      item: "/ae2:.*(flawed|damaged|chipped)_budding_quartz/",
+      item: "ae2:flawed_budding_quartz",
+      tooltip: "Create a Flawless Budding Quartz to grow Certus Quartz.",
+    },
+    {
+      item: "ae2:damaged_budding_quartz",
+      tooltip: "Create a Flawless Budding Quartz to grow Certus Quartz.",
+    },
+    {
+      item: "ae2:chipped_budding_quartz",
       tooltip: "Create a Flawless Budding Quartz to grow Certus Quartz.",
     },
     {
@@ -20,8 +28,19 @@ ItemEvents.tooltip((e) => {
       tooltip: "Place this block to grow Certus Quartz.",
     },
     {
-      regex:
-        "/ae2:(logic_processor_press|calculation_processor_press|engineering_processor_press|silicon_press)/",
+      item: "ae2:logic_processor_press",
+      tooltip: "Create and break a Mysterious Cube to obtain AE2 presses.",
+    },
+    {
+      item: "ae2:calculation_processor_press",
+      tooltip: "Create and break a Mysterious Cube to obtain AE2 presses.",
+    },
+    {
+      item: "ae2:engineering_processor_press",
+      tooltip: "Create and break a Mysterious Cube to obtain AE2 presses.",
+    },
+    {
+      item: "ae2:silicon_press",
       tooltip: "Create and break a Mysterious Cube to obtain AE2 presses.",
     },
   ];
