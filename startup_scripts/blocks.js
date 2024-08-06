@@ -13,7 +13,7 @@ StartupEvents.registry("block", (event) => {
     .box(6, 5, 6, 10, 6, 10, true)
     .box(5, 6, 5, 11, 12, 11, true);
 
-  let machine = (name, layer) => {
+  let machine = (name, layer, light) => {
     let id = name.toLowerCase();
     event
       .create("create:" + id + "_machine", "cardinal")
@@ -22,12 +22,13 @@ StartupEvents.registry("block", (event) => {
       .hardness(3.0)
       .displayName(name + " Machine")
       .notSolid()
-      .renderType(layer);
+      .renderType(layer)
+      .lightLevel(light);
   };
 
-  machine("Andesite", "solid");
-  machine("Brass", "translucent");
-  machine("Sealed", "cutout");
-  machine("Locomotive", "solid");
-  machine("Abstruse", "translucent");
+  machine("Andesite", "solid", 0);
+  machine("Brass", "translucent", 0);
+  machine("Sealed", "cutout", 0);
+  machine("Locomotive", "solid", 0);
+  machine("Abstruse", "translucent", 7);
 });
