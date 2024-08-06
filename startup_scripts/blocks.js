@@ -29,4 +29,5 @@ StartupEvents.registry("block", (event) => {
   machine("Brass", "translucent");
   machine("Sealed", "cutout");
   machine("Locomotive", "solid");
+  machine("Abstruse", "translucent");
 });
