@@ -2,8 +2,8 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [64, 64],
 	"textures": {
-		"13": "abstruse_machine",
-		"particle": "create:block/void_casing"
+		"13": "create:block/abstruse_machine",
+		"particle": "create:block/abstruse_machine"
 	},
 	"elements": [
 		{
