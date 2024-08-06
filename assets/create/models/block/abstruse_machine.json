@@ -3,7 +3,7 @@
 	"texture_size": [64, 64],
 	"textures": {
 		"13": "abstruse_machine",
-		"particle": "Desktop:void_casing"
+		"particle": "create:block/void_casing"
 	},
 	"elements": [
 		{
