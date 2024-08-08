@@ -28,7 +28,12 @@ ServerEvents.recipes((e) => {
     "create:copper_casing", // Arg 2: the item to replace
     "create:sealed_machine" // Arg 3: the item to replace it with
   );
-
+  
+  e.replaceInput(
+    { output: "apotheosis:potion_charm" }, // Arg 1: the filter
+    "minecraft:blaze_powder", // Arg 2: the item to replace
+    "minecraft:diamond_block" // Arg 3: the item to replace it with
+  );
   e.replaceInput(
     { output: "createoreexcavation:vein_finder" }, // Arg 1: the filter
     "#forge:ores/redstone", // Arg 2: the item to replace
