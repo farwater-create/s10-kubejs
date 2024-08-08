@@ -1,4 +1,4 @@
-ServerEvents.recipes((e) => {
+aftServerEvents.recipes((e) => {
   e.replaceInput(
     { mod: "createutilities" }, // Arg 1: the filter
     "createutilities:graviton_tube", // Arg 2: the item to replace
