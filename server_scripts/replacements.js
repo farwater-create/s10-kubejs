@@ -30,12 +30,6 @@ aftServerEvents.recipes((e) => {
   );
   
   e.replaceInput(
-    { mod: "apotheosis" }, // Arg 1: the filter
-    "minecraft:blaze_powder", // Arg 2: the item to replace
-    "minecraft:diamond_block" // Arg 3: the item to replace it with
-  );
-  
-  e.replaceInput(
     { output: "createoreexcavation:vein_finder" }, // Arg 1: the filter
     "#forge:ores/redstone", // Arg 2: the item to replace
     "#endermanoverhaul:ender_pearls" // Arg 3: the item to replace it with
