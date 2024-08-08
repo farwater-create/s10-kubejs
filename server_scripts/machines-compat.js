@@ -129,4 +129,13 @@ ServerEvents.recipes((event) => {
   ];
 
   multicut(locomotive_machines_cutting, "create:locomotive_machine", true);
+
+  const abstruse_machines_cutting = [
+    Item.of("createutilities:void_motor", 2),
+    Item.of("createutilities:void_chest", 2),
+    Item.of("createutilities:void_tank", 2),
+    Item.of("createutilities:void_battery", 2),
+  ];
+
+  multicut(abstruse_machines_cutting, "create:abstruse_machine", true);
 });
