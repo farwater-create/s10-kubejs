@@ -42,6 +42,7 @@ const recipeRemovals = [
   { type: "createoreexcavation:drilling" },
   { type: "createoreexcavation:extracting" },
   { type: "createoreexcavation:vein" },
+  { type: "apotheosis:potion_charm" },
   {
     output: "createoreexcavation:diamond_drill",
     type: "minecraft:crafting_shaped",
