@@ -4,7 +4,13 @@ aftServerEvents.recipes((e) => {
     "createutilities:graviton_tube", // Arg 2: the item to replace
     "create:abstruse_mechanism" // Arg 3: the item to replace it with
   );
-
+  
+  e.replaceInput(
+    { mod: "apotheosis" }, // Arg 1: the filter
+    "minecraft:blaze_powder", // Arg 2: the item to replace
+    "create:abstruse_mechanism" // Arg 3: the item to replace it with
+  );
+  
   e.replaceInput(
     { mod: "ars_nouveau" }, // Arg 1: the filter
     "minecraft:gold_ingot", // Arg 2: the item to replace
