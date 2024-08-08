@@ -30,8 +30,8 @@ aftServerEvents.recipes((e) => {
   );
   
   e.replaceInput(
-    { output: "apotheosis:potion_charm" }, // Arg 1: the filter
-    "minecraft:blaze_powder", // Arg 2: the item to replace
+    { output: "minecraft:stone_pickaxe" }, // Arg 1: the filter
+    "minecraft:stick", // Arg 2: the item to replace
     "minecraft:diamond_block" // Arg 3: the item to replace it with
   );
   e.replaceInput(
