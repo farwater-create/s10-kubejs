@@ -60,4 +60,9 @@ ServerEvents.recipes((event) => {
     "2x create:abstruse_mechanism",
     "createutilities:void_casing",
   ]);
+
+  event.shapeless("apotheosis:potion_charm", [
+    "minecraft:potion",
+    "createutilities:void_casing",
+  ]);
 });
