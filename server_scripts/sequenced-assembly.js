@@ -114,7 +114,7 @@ ServerEvents.recipes((e) => {
   e.recipes.create
     .sequenced_assembly(
       [Item.of("create:abstruse_mechanism")],
-      Item.of("create:precision_mechanism"),
+      Item.of("create:infernal_mechanism"),
       [
         e.recipes.create.deploying(t, [t, "createutilities:graviton_tube"]),
         e.recipes.create.deploying(t, [t, "minecraft:echo_shard"]),
@@ -182,10 +182,13 @@ ServerEvents.recipes((e) => {
       [Item.of("create:infernal_mechanism")],
       Item.of("vintageimprovements:cast_iron_sheet"),
       [
-        e.recipes.create.deploying(t, [t, "minecraft:quartz"]),
-        e.recipes.create.deploying(t, [t, "minecraft:blaze_rod"]),
-        e.recipes.create.deploying(t, [t, "vintageimprovements:blaze_spring"]),
-        e.recipes.create.deploying(t, [t, "tfmg:screwdriver"]),
+        e.recipes.create.deploying(t, [t, "farwater:blaze_core"]),
+        e.recipes.create.deploying(t, [
+          t,
+          "vintageimprovements:cast_iron_spring",
+        ]),
+        e.recipes.create.deploying(t, [t, "minecraft:blaze_powder"]),
+        e.recipes.create.pressing(t, t),
       ]
     )
     .transitionalItem(t)

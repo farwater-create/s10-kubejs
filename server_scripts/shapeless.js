@@ -55,4 +55,9 @@ ServerEvents.recipes((event) => {
     "2x create:infernal_mechanism",
     "create:railway_casing",
   ]);
+
+  event.shapeless("create:abstruse_machine", [
+    "2x create:abstruse_mechanism",
+    "createutilities:void_casing",
+  ]);
 });

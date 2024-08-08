@@ -5,17 +5,8 @@
 //   });
 // });
 
-MoreJSEvents.updateVillagerOffers((event) => {
-  console.log("loading updateVillagerOffers...");
-
-  console.log("event: ", event.getOffers());
-
-  event.getOffers().removeIf((trade) => {
-    let isNotAllowedTrade = trade
-      .getOutput()
-      .getId()
-      .match("minecraft:emerald");
-
-    return !!isNotAllowedTrade;
+MoreJSEvents.playerStartTrading((event) => {
+  event.forEachOffers((o) => {
+    if (o.getOutput().getId() === "minecraft:emerald") o.disabled = true;
   });
 });
