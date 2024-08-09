@@ -18,6 +18,18 @@ ServerEvents.recipes((e) => {
   );
 
   e.replaceInput(
+    { output: "ae2:energy_acceptor" }, // Arg 1: the filter
+    "minecraft:copper_ingot", // Arg 2: the item to replace
+    "create:calculating_mechanism" // Arg 3: the item to replace it with
+  );
+
+  e.replaceInput(
+    { output: "ae2:charger" }, // Arg 1: the filter
+    "minecraft:copper_ingot", // Arg 2: the item to replace
+    "createaddition:tesla_coil" // Arg 3: the item to replace it with
+  );
+
+  e.replaceInput(
     { output: "createoreexcavation:drilling_machine" }, // Arg 1: the filter
     "create:copper_casing", // Arg 2: the item to replace
     "create:sealed_machine" // Arg 3: the item to replace it with
