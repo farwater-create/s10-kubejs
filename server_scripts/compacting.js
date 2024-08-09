@@ -25,10 +25,14 @@ ServerEvents.recipes((e) => {
     [Item.of("farwater:rubber", 1)],
     [Fluid.of("minecraft:water", 125), Item.of("minecraft:kelp", 2)]
   );
-  
-  event.remove({ output: 'create:blaze_cake_base' })
+
+  e.remove({ output: "create:blaze_cake_base" });
   e.recipes.create.compacting(
-    [Item.of("farwater:create:blaze_cake_base", 1)],
-    [Item.of("minecraft:sugar", 1),Item.of("create:cinder_flour", 1)]
+    [Item.of("create:blaze_cake_base", 1)],
+    [
+      Item.of("minecraft:sugar", 1),
+      Item.of("create:cinder_flour", 1),
+      Fluid.of("minecraft:milk", 80),
+    ]
   );
 });

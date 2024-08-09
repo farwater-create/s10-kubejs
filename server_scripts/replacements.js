@@ -1,16 +1,4 @@
-aftServerEvents.recipes((e) => {
-  e.replaceInput(
-    { mod: "createutilities" }, // Arg 1: the filter
-    "createutilities:graviton_tube", // Arg 2: the item to replace
-    "create:abstruse_mechanism" // Arg 3: the item to replace it with
-  );
-  
-  e.replaceInput(
-    { mod: "apotheosis" }, // Arg 1: the filter
-    "minecraft:blaze_powder", // Arg 2: the item to replace
-    "create:abstruse_mechanism" // Arg 3: the item to replace it with
-  );
-  
+ServerEvents.recipes((e) => {
   e.replaceInput(
     { mod: "ars_nouveau" }, // Arg 1: the filter
     "minecraft:gold_ingot", // Arg 2: the item to replace
@@ -34,7 +22,7 @@ aftServerEvents.recipes((e) => {
     "create:copper_casing", // Arg 2: the item to replace
     "create:sealed_machine" // Arg 3: the item to replace it with
   );
-  
+
   e.replaceInput(
     { output: "createoreexcavation:vein_finder" }, // Arg 1: the filter
     "#forge:ores/redstone", // Arg 2: the item to replace

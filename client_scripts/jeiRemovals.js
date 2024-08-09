@@ -2,6 +2,7 @@ let jeiRemovals = [
   "tfmg:quad_potato_cannon",
   "create:potato_cannon",
   "cataclysm:ignitium_elytra_chestplate",
+  "apotheosis:potion_charm",
 ];
 
 let jeiDyeDepotItems = ["present", "trapped_present", "candle_holder", "flag"];

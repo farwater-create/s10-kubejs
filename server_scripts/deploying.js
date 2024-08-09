@@ -16,9 +16,4 @@ ServerEvents.recipes((e) => {
     [{ item: "occultism:otherstone" }, { item: "ars_nouveau:air_essence" }],
     [{ item: "ae2:sky_stone_block" }]
   );
-
-  itemApplication(
-    [{ item: "createutilities:void_casing" }, { item: "create:abstruse_mechanism" }],
-    [{ item: "create:abstruse_machine" }]
-  );
 });
