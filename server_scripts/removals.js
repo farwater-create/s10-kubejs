@@ -54,6 +54,7 @@ const recipeRemovals = [
   { output: "tfmg:steel_pipe", type: "minecraft:crafting_shaped" },
   { output: "tfmg:cast_iron_pipe", type: "minecraft:crafting_shaped" },
   { output: "tfmg:brass_pipe", type: "minecraft:crafting_shaped" },
+  { output: "tfmg:screwdriver", type: "minecraft:crafting_shaped" },
   { output: "alexsmobs:dimensional_carver" },
   { output: "alexsmobs:shattered_dimensional_carver" },
   { output: "brewery:rope" },

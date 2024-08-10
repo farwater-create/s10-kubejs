@@ -21,27 +21,8 @@ ServerEvents.recipes((event) => {
     R: "farwater:cured_rubber",
   });
 
-  let head = (name, material) => {
-    event.shaped(name, ["MMM", "M M"], {
-      M: material,
-    });
-  };
-
-  let chest = (name, material) => {
-    event.shaped(name, ["M M", "MMM", "MMM"], {
-      M: material,
-    });
-  };
-
-  let legs = (name, material) => {
-    event.shaped(name, ["MMM", "M M", "M M"], {
-      M: material,
-    });
-  };
-
-  let foot = (name, material) => {
-    event.shaped(name, ["M M", "M M"], {
-      M: material,
-    });
-  };
+  event.shaped("tfmg:screwdriver", ["  A", " A ", "B  "], {
+    A: "minecraft:iron_ingot",
+    B: "#forge:stripped_logs",
+  });
 });
