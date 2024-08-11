@@ -10,6 +10,8 @@ const recipeRemovals = [
   { output: "ars_nouveau:magebloom_crop" },
   { output: "ars_nouveau:source_gem", type: "ars_nouveau:imbuement" },
   { type: "ars_nouveau:book_upgrade" },
+  { type: "ars_nouveau:armor_upgrade" },
+  { type: "iceandfire:dragonforge" },
   { output: "ars_nouveau:magebloom_fiber" },
   { output: "forbidden_arcanus:ender_pearl_fragment" },
   { output: "forbidden_arcanus:quantum_catcher" },

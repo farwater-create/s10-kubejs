@@ -89,4 +89,55 @@ ServerEvents.recipes((event) => {
     "ae2:mysterious_cube", // output
     10000 // source cost
   );
+
+  event.custom({
+    type: "ars_nouveau:armor_upgrade",
+    pedestalItems: [
+      {
+        item: {
+          item: "forbidden_arcanus:soul",
+        },
+      },
+      {
+        item: {
+          item: "forbidden_arcanus:enchanted_soul",
+        },
+      },
+      {
+        item: {
+          item: "forbidden_arcanus:corrupt_soul",
+        },
+      },
+    ],
+    sourceCost: 5000,
+    tier: 1,
+  });
+
+  event.custom({
+    type: "ars_nouveau:armor_upgrade",
+    pedestalItems: [
+      {
+        item: {
+          item: "alexsmobs:mimicream",
+        },
+      },
+      {
+        item: {
+          item: "minecraft:chorus_fruit",
+        },
+      },
+      {
+        item: {
+          item: "forbidden_arcanus:dark_matter",
+        },
+      },
+      {
+        item: {
+          item: "endermanoverhaul:ancient_pearl",
+        },
+      },
+    ],
+    sourceCost: 8000,
+    tier: 2,
+  });
 });

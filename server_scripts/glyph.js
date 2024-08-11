@@ -82,7 +82,7 @@ ServerEvents.recipes((e) => {
         { item: "minecraft:phantom_membrane" },
         { item: "minecraft:phantom_membrane" },
         { item: "forbidden_arcanus:soul" },
-        { item: "forbidden_arcanus:corrupt_soul" },
+        { item: "forbidden_arcanus:enchanted_soul" },
       ],
       output: "ars_nouveau:glyph_intangible",
       exp: 160,

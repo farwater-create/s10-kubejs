@@ -53,12 +53,6 @@ ServerEvents.recipes((e) => {
   );
 
   e.replaceInput(
-    { id: "ars_nouveau:upgrade_2" }, // Arg 1: the filter
-    "minecraft:chorus_fruit", // Arg 2: the item to replace
-    "alexsmobs:mimicream" // Arg 3: the item to replace it with
-  );
-
-  e.replaceInput(
     {
       not: [
         { type: "minecraft:stonecutting" },
