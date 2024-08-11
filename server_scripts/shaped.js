@@ -21,8 +21,8 @@ ServerEvents.recipes((event) => {
     R: "farwater:cured_rubber",
   });
 
-  event.shaped("tfmg:screwdriver", ["  A", " A ", "B  "], {
-    A: "minecraft:iron_ingot",
+  event.shaped("tfmg:screwdriver", [" A", "B "], {
+    A: "#forge:rods/iron",
     B: "#forge:stripped_logs",
   });
 });
