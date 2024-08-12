@@ -12,12 +12,6 @@ ServerEvents.recipes((e) => {
   );
 
   e.replaceInput(
-    { output: "vintageimprovements:lathe" }, // Arg 1: the filter
-    "create:andesite_casing", // Arg 2: the item to replace
-    "create:andesite_machine" // Arg 3: the item to replace it with
-  );
-
-  e.replaceInput(
     { output: "ae2:energy_acceptor" }, // Arg 1: the filter
     "minecraft:copper_ingot", // Arg 2: the item to replace
     "create:calculating_mechanism" // Arg 3: the item to replace it with

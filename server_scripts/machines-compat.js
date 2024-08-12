@@ -50,6 +50,7 @@ ServerEvents.recipes((event) => {
     ["createaddition:capacitor", "createaddition:alternator"],
     ["create:mechanical_piston", "vintageimprovements:vibrating_table"],
     ["vintageimprovements:grinder_belt", "vintageimprovements:belt_grinder"],
+    ["vintageimprovements:iron_spring", "vintageimprovements:lathe"],
     [
       "vintageimprovements:spring_coiling_machine_wheel",
       "vintageimprovements:spring_coiling_machine",
