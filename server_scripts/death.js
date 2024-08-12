@@ -14,10 +14,14 @@ EntityEvents.death((e) => {
         if (item.damageableItem && Math.random() < 0.5) {
           const currentDamage = item.getDamageValue();
           const durability = item.maxDamage;
-          const maxDamage = durability * 0.95;
-          const newDamage = (currentDamage + maxDamage) / 2;
 
-          item.setDamageValue(newDamage);
+          if (currentDamage >= 0.9 * durability) {
+            item.setDamageValue(durability - 1);
+          } else {
+            const maxDamage = durability * 0.95;
+            const newDamage = (currentDamage + maxDamage) / 2;
+            item.setDamageValue(newDamage);
+          }
         }
       });
   }
