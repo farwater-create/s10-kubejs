@@ -16,7 +16,7 @@ EntityEvents.death((e) => {
           const durability = item.maxDamage;
 
           if (currentDamage >= 0.9 * durability) {
-            item.setDamageValue(durability - 1);
+            item.setDamageValue(durability - 2);
           } else {
             const maxDamage = durability * 0.95;
             const newDamage = (currentDamage + maxDamage) / 2;
