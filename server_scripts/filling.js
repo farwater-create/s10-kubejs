@@ -29,8 +29,8 @@ ServerEvents.recipes((e) => {
     Fluid.of("farwater:blazing_blood", 1000),
   ]);
 
-  e.recipes.create.filling(Item.of("minecraft:blaze_rod", 2), [
-    Item.of("#c:wooden_rods", 2),
-    Fluid.of("farwater:blazing_blood", 500),
+  e.recipes.create.filling(Item.of("minecraft:blaze_rod", 1), [
+    Ingredient.of("#forge:rods", 2),
+    Fluid.of("farwater:blazing_blood", 400),
   ]);
 });
