@@ -109,4 +109,49 @@ ServerEvents.recipes((e) => {
     )
     .heated()
     .processingTime(8 * 20); // ticks
+  
+  e.recipes.create
+    .mixing(
+      [Item.of("create:crimsite"), Item.of("create:crimsite").withChance(0.2)], // output
+      
+      [Item.of("create:crimsite"), Item.of("minecraft:blackstone")] // input
+    )
+    .heated()
+    .processingTime(10 * 20); // ticks
+
+  e.recipes.create
+    .mixing(
+      [Item.of("create:asurine"), Item.of("create:asurine").withChance(0.2)], // output
+      
+      [Item.of("create:asurine"), Item.of("minecraft:cobbled_deepslate")] // input
+    )
+    .heated()
+    .processingTime(10 * 20); // ticks
+
+  e.recipes.create
+    .mixing(
+      [Item.of("create:veridium"), Item.of("create:veridium").withChance(0.2)], // output
+      
+      [Item.of("create:veridium"), Item.of("minecraft:mossy_cobblestone")] // input
+    )
+    .heated()
+    .processingTime(10 * 20); // ticks
+
+  e.recipes.create
+    .mixing(
+      [Item.of("create:ochrum"), Item.of("create:ochrum").withChance(0.2)], // output
+      
+      [Item.of("create:ochrum"), Item.of("minecraft:sandstone")] // input
+    )
+    .heated()
+    .processingTime(10 * 20); // ticks
+
+  e.recipes.create
+    .mixing(
+      [Item.of("create:limestone"), Item.of("create:limestone").withChance(0.2)], // output
+      
+      [Item.of("create:limestone"), Item.of("minecraft:quartz")] // input
+    )
+    .heated()
+    .processingTime(10 * 20); // ticks
 });
