@@ -109,16 +109,4 @@ ServerEvents.recipes((e) => {
     )
     .heated()
     .processingTime(8 * 20); // ticks
-
-  e.recipes.create
-    .mixing(
-      [
-        Item.of("create:limestone"),
-        Item.of("create:limestone").withChance(0.2),
-      ], // output
-
-      [Item.of("create:limestone"), Item.of("minecraft:quartz")] // input
-    )
-    .heated()
-    .processingTime(10 * 20); // ticks
 });
