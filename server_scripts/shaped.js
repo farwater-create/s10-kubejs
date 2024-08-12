@@ -25,8 +25,4 @@ ServerEvents.recipes((event) => {
     A: "#forge:rods/iron",
     B: "#forge:stripped_logs",
   });
-  
-  event.shaped("create:fluid_pipe", ["   ", "AAA"], {
-    A: "create:copper_sheet"
-  });
 });
