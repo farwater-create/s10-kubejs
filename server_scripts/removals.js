@@ -61,6 +61,7 @@ const recipeRemovals = [
   { output: "alexsmobs:shattered_dimensional_carver" },
   { output: "brewery:rope" },
   { output: "create:blaze_cake" },
+  { output: "constructionwand:infinity_wand" },
 ];
 
 const dyeDepotItems = ["present", "trapped_present", "candle_holder", "flag"];
