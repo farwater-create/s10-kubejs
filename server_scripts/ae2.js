@@ -27,8 +27,6 @@ ServerEvents.recipes((event) => {
       "minecraft:diamond",
     ],
   ].forEach((processor) => {
-    event.recipes.ae2
-      .inscriber(processor[0], processor[1], processor[2])
-      .mode("press");
+    event.recipes.ae2.inscriber(processor[0], processor[1], processor[2]);
   });
 });
