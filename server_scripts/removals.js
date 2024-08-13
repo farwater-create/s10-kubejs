@@ -1,4 +1,6 @@
 const recipeRemovals = [
+  { output: "numistics:vendor" },
+  { output: "numistics:white_card" },
   { output: "vintageimprovements:laser" },
   { output: "minecraft:ender_pearl" },
   { output: "minecraft:ender_eye", type: "minecraft:crafting_shapeless" },
