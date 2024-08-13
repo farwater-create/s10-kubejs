@@ -33,4 +33,9 @@ ServerEvents.recipes((e) => {
     Ingredient.of("#forge:rods", 2),
     Fluid.of("farwater:blazing_blood", 400),
   ]);
+
+  e.recipes.create.filling(Item.of("minecraft:ender_eye", 1), [
+    Ingredient.of("#forge:ender_pearls", 1),
+    Fluid.of("farwater:blazing_blood", 200),
+  ]);
 });
