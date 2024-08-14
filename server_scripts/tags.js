@@ -31,15 +31,12 @@ ServerEvents.tags("item", (event) => {
   event.add("ae2:budding_quartz", "ae2:chipped_budding_quartz");
   event.add("ae2:budding_quartz", "minecraft:quartz_block");
 
-
-});
-onEvent('item.tags', event => {     
   event.remove("minecraft:flowers", "iceandfire:fire_lily");
   event.remove("minecraft:small_flowers", "iceandfire:fire_lily");
   event.remove("minecraft:flowers", "iceandfire:ice_lily");
   event.remove("minecraft:small_flowers", "iceandfire:ice_lily");
   event.remove("minecraft:flowers", "iceandfire:lightning_lily");
-  event.remove("minecraft:small_flowers", "iceandfire:lightning_lily");   
+  event.remove("minecraft:small_flowers", "iceandfire:lightning_lily");
 });
 
 ServerEvents.tags("fluid", (event) => {
