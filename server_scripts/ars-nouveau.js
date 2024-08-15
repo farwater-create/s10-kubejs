@@ -76,6 +76,19 @@ ServerEvents.recipes((event) => {
 
   event.recipes.ars_nouveau.enchanting_apparatus(
     [
+      "minecraft:popped_chorus_fruit",
+      "createutilities:graviton_tube",
+      "minecraft:popped_chorus_fruit",
+      "minecraft:popped_chorus_fruit",
+      "minecraft:popped_chorus_fruit",
+    ],
+    "ars_nouveau:source_jar", // input item
+    "ars_additions:ender_source_jar", // output
+    6000 // source cost
+  );
+
+  event.recipes.ars_nouveau.enchanting_apparatus(
+    [
       "ae2:fluix_pearl",
       "ae2:fluix_pearl",
       "create_things_and_misc:vibration_mechanism",

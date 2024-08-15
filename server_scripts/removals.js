@@ -65,6 +65,8 @@ const recipeRemovals = [
   { output: "create:blaze_cake" },
   { output: "constructionwand:infinity_wand" },
   { output: "constructionwand:core_destruction" },
+  { output: "ars_additions:source_spawner" },
+  { output: "ars_additions:ender_source_jar" },
 ];
 
 const dyeDepotItems = ["present", "trapped_present", "candle_holder", "flag"];
