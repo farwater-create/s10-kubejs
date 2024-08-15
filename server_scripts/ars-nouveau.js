@@ -89,38 +89,6 @@ ServerEvents.recipes((event) => {
 
   event.recipes.ars_nouveau.enchanting_apparatus(
     [
-      "dimensionalpocketsii:dimensional_shard",
-      "dimensionalpocketsii:dimensional_shard",
-    ],
-    "minecraft:iron_ingot", // input item
-    "dimensionalpocketsii:dimensional_ingot", // output
-    2000 // source cost
-  );
-
-  event.recipes.ars_nouveau.enchanting_apparatus(
-    [
-      "dimensionalpocketsii:dimensional_shard",
-      "dimensionalpocketsii:dimensional_shard",
-    ],
-    "ars_nouveau:source_gem", // input item
-    "dimensionalpocketsii:dimensional_gem", // output
-    2000 // source cost
-  );
-
-  event.recipes.ars_nouveau.enchanting_apparatus(
-    [
-      "dimensionalpocketsii:dimensional_gem",
-      "dimensionalpocketsii:dimensional_gem",
-      "dimensionalpocketsii:dimensional_gem",
-      "dimensionalpocketsii:dimensional_gem",
-    ],
-    "farwater:blaze_core", // input item
-    "dimensionalpocketsii:block_dimensional_core", // output
-    2000 // source cost
-  );
-
-  event.recipes.ars_nouveau.enchanting_apparatus(
-    [
       "ae2:fluix_pearl",
       "ae2:fluix_pearl",
       "create_things_and_misc:vibration_mechanism",
