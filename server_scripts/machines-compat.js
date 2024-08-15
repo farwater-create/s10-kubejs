@@ -139,4 +139,13 @@ ServerEvents.recipes((event) => {
   ];
 
   multicut(abstruse_machines_cutting, "create:abstruse_machine", true);
+
+  const heads = [
+   Item.of("vintageimprovements:convex_curving_head",1),
+   Item.of("vintageimprovements:concave_curving_head",1),
+   Item.of("vintageimprovements:w_shaped_curving_head",1),
+   Item.of("vintageimprovements:v_shaped_curving_head",1),
+  ];
+
+  multicut(heads, "minecraft:iron_block", true);
 });
