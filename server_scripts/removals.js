@@ -67,6 +67,7 @@ const recipeRemovals = [
   { output: "constructionwand:core_destruction" },
   { output: "ars_additions:source_spawner" },
   { output: "ars_additions:ender_source_jar" },
+  { output: "nethers_exoticism:soul_glass", type: "create:smelting" },
 ];
 
 const dyeDepotItems = ["present", "trapped_present", "candle_holder", "flag"];
