@@ -31,6 +31,6 @@ ServerEvents.recipes((e) => {
       type: "vintageimprovements:turning",
       ingredients: recipe.ingredients,
       results: recipe.results,
-    });
+    }).id(`vintageimprovements:turning/${recipe.results[0].item}`);
   });
 });
