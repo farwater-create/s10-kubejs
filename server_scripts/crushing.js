@@ -15,6 +15,14 @@ ServerEvents.recipes((e) => {
         ["tfmg:fireclay_ball", 0.6],
       ],
     },
+    {
+      input: "dimensionalpocketsii:dimensional_shard",
+      outputs: [
+        ["dimensionalpocketsii:dimensional_dust", 1],
+        ["dimensionalpocketsii:dimensional_dust", 0.8],
+        ["dimensionalpocketsii:dimensional_dust", 0.4],
+      ],
+    },
   ].forEach((recipe) => {
     let cleanoutputs = [];
     recipe.outputs.forEach((output) => {

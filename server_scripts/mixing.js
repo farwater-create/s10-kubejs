@@ -109,4 +109,17 @@ ServerEvents.recipes((e) => {
     )
     .heated()
     .processingTime(8 * 20); // ticks
+
+  e.recipes.create
+    .mixing(
+      [Item.of("dimensionalpocketsii:dimensional_shard", 1)], // output
+
+      [
+        Item.of("createdeco:netherite_nugget", 1),
+        Item.of("forbidden_arcanus:arcane_crystal_dust", 1),
+        Fluid.of("create_central_kitchen:dragon_breath", 10),
+      ] // input
+    )
+    .superheated()
+    .processingTime(8 * 20); // ticks
 });
