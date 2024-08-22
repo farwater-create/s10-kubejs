@@ -8,7 +8,7 @@ ServerEvents.recipes((event) => {
   });
 
   event.shaped("minecraft:mushroom_stem", ["MMM", "MWM", "MMM"], {
-    M: "#forge:mushroom",
+    M: "#farwater:mushroom",
     W: "minecraft:white_dye",
   });
 
@@ -24,5 +24,9 @@ ServerEvents.recipes((event) => {
   event.shaped("tfmg:screwdriver", [" A", "B "], {
     A: "#forge:rods/iron",
     B: "#forge:stripped_logs",
+  });
+
+  event.shaped("iceandfire:ash", ["AAA", "AAA", "AAA"], {
+    A: "supplementaries:ash",
   });
 });

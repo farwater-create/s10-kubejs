@@ -18,7 +18,7 @@ ServerEvents.recipes((e) => {
       item: "minecraft:diorite",
     },
   });
-  
+
     e.custom({
     type: "create_mechanical_extruder:extruding",
     ingredients: [
@@ -70,6 +70,46 @@ ServerEvents.recipes((e) => {
     ],
     result: {
       item: "create:scoria",
+    },
+  });
+
+  e.custom({
+    type: "create_mechanical_extruder:extruding",
+    ingredients: [
+      {
+        fluid: "minecraft:water",
+        amount: 1000,
+      },
+      {
+        fluid: "minecraft:lava",
+        amount: 1000,
+      },
+    ],
+    catalyst: {
+      item: "minecraft:bone_block",
+    },
+    result: {
+      item: "minecraft:calcite",
+    },
+  });
+
+  e.custom({
+    type: "create_mechanical_extruder:extruding",
+    ingredients: [
+      {
+        fluid: "minecraft:water",
+        amount: 1000,
+      },
+      {
+        fluid: "minecraft:lava",
+        amount: 1000,
+      },
+    ],
+    catalyst: {
+      item: "iceandfire:ash",
+    },
+    result: {
+      item: "minecraft:tuff",
     },
   });
 });

@@ -37,6 +37,11 @@ ServerEvents.tags("item", (event) => {
   event.remove("minecraft:small_flowers", "iceandfire:ice_lily");
   event.remove("minecraft:flowers", "iceandfire:lightning_lily");
   event.remove("minecraft:small_flowers", "iceandfire:lightning_lily");
+
+  event.add("farwater:mushroom", "minecraft:red_mushroom");
+  event.add("farwater:mushroom", "minecraft:brown_mushroom");
+  event.add("farwater:mushroom", "farmersdelight:red_mushroom_colony");
+  event.add("farwater:mushroom", "farmersdelight:brown_mushroom_colony");
 });
 
 ServerEvents.tags("fluid", (event) => {
