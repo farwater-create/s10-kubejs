@@ -56,4 +56,10 @@ ServerEvents.recipes((e) => {
     "meadow:limestone", // Arg 2: the item to replace
     "#farwater:limestones" // Arg 3: the item to replace it with
   );
+
+  e.replaceInput(
+    { output: "vintageimprovements:andesite_wire" }, // Arg 1: the filter
+    "vintageimprovements:andesite_sheet", // Arg 2: the item to replace
+    "createdeco:andesite_sheet" // Arg 3: the item to replace it with
+  );
 });
