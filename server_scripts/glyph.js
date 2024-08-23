@@ -4,7 +4,7 @@ ServerEvents.recipes((e) => {
       input: [
         { item: { item: "minecraft:lantern" } },
         { item: { item: "minecraft:torch" } },
-        { item: { item: "twilightforest:torchberries" } },
+        { item: { item: "minecraft:coal_block" } },
       ],
       output: "ars_nouveau:glyph_light",
       exp: 27,
