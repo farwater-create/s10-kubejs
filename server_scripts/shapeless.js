@@ -60,4 +60,8 @@ ServerEvents.recipes((event) => {
     "2x create:abstruse_mechanism",
     "createutilities:void_casing",
   ]);
+
+  event.shapeless("9x supplementaries:ash", [
+    "iceandfire:ash",
+  ]);
 });
