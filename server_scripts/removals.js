@@ -7,6 +7,8 @@ const recipeRemovals = [
   { output: "cataclysm:meat_shredder" },
   { output: "cataclysm:laser_gatling" },
   { input: "minecraft:iron_pickaxe", output: "ars_nouveau:novice_spell_book" },
+  { input: "create:industrial_iron_block", output: "create:industrial_iron_ingot" },
+  { input: "create:industrial_iron_ingot", output: "create:industrial_iron_block" },
   { output: "ars_nouveau:stable_warp_scroll" },
   { output: "ars_nouveau:warp_scroll" },
   { output: "ars_nouveau:magebloom_crop" },
