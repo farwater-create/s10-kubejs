@@ -71,6 +71,17 @@ const recipeRemovals = [
   { output: "ars_additions:ender_source_jar" },
   { output: "nethers_exoticism:soul_glass", type: "create:smelting" },
   { output: "vintageimprovements:andesite_sheet" },
+  { output: "create_connected:copycat_block" },
+  { output: "create_connected:copycat_slab" },
+  { output: "create_connected:copycat_beam" },
+  { output: "create_connected:copycat_vertical_step" },
+  { output: "create_connected:copycat_stairs" },
+  { output: "create_connected:copycat_fence" },
+  { output: "create_connected:copycat_fence_gate" },
+  { output: "create_connected:copycat_wall" },
+  { output: "create_connected:copycat_board" },
+  { output: "create_connected:copycat_box" },
+  { output: "create_connected:copycat_catwalk" },
 ];
 
 const dyeDepotItems = ["present", "trapped_present", "candle_holder", "flag"];
@@ -84,6 +95,8 @@ const railwaysItems = ["conductor_cap", "incomplete_conductor_cap"];
 const createItems = ["seat", "toolbox", "valve_handle"];
 
 const reliquaryItems = ["pedestals", "passive_pedestals"];
+
+const botanyPots : ["terracotta_botany_pot", "terracotta_hopper_botany_pot"];
 
 const colors = [
   "maroon",
@@ -130,6 +143,10 @@ colors.forEach((color) => {
     recipeRemovals.push({
       output: `reliquary:pedestals/passive/${color}_passive_pedestal`,
     });
+  });
+
+  botanyPots.forEach((item) => {
+    recipeRemovals.push({ output: `botanypots:${color}_${item}` });
   });
 });
 

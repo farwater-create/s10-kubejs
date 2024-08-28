@@ -3,6 +3,17 @@ let jeiRemovals = [
   "create:potato_cannon",
   "cataclysm:ignitium_elytra_chestplate",
   "apotheosis:potion_charm",
+  "create_connected:copycat_block",
+  "create_connected:copycat_slab",
+  "create_connected:copycat_beam",
+  "create_connected:copycat_vertical_step",
+  "create_connected:copycat_stairs",
+  "create_connected:copycat_fence",
+  "create_connected:copycat_fence_gate",
+  "create_connected:copycat_wall",
+  "create_connected:copycat_board",
+  "create_connected:copycat_box",
+  "create_connected:copycat_catwalk",
 ];
 
 let jeiDyeDepotItems = ["present", "trapped_present", "candle_holder", "flag"];
