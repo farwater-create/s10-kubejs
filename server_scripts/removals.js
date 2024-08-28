@@ -96,7 +96,7 @@ const createItems = ["seat", "toolbox", "valve_handle"];
 
 const reliquaryItems = ["pedestals", "passive_pedestals"];
 
-const botanyPots : ["terracotta_botany_pot", "terracotta_hopper_botany_pot"];
+const botanyPots = ["terracotta_botany_pot", "terracotta_hopper_botany_pot"];
 
 const colors = [
   "maroon",
