@@ -83,6 +83,15 @@ const recipeRemovals = [
   { output: "create_connected:copycat_box" },
   { output: "create_connected:copycat_catwalk" },
   { output: "ae2:tiny_tnt" },
+  { output: "ae2:spatial_cell_component_2" },
+  { output: "ae2:spatial_cell_component_16" },
+  { output: "ae2:spatial_cell_component_128" },
+  { output: "ae2:spatial_storage_cell_2" },
+  { output: "ae2:spatial_storage_cell_16" },
+  { output: "ae2:spatial_storage_cell_128" },
+  { output: "ae2:spatial_pylon" },
+  { output: "ae2:spatial_io_port" },
+  { output: "ae2:spatial_anchor" },
 ];
 
 const dyeDepotItems = ["present", "trapped_present", "candle_holder", "flag"];

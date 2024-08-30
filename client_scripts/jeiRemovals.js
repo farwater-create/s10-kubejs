@@ -15,6 +15,15 @@ let jeiRemovals = [
   "create_connected:copycat_box",
   "create_connected:copycat_catwalk",
   "ae2:tiny_tnt",
+  "ae2:spatial_cell_component_2",
+  "ae2:spatial_cell_component_16",
+  "ae2:spatial_cell_component_128",
+  "ae2:spatial_storage_cell_2",
+  "ae2:spatial_storage_cell_16",
+  "ae2:spatial_storage_cell_128",
+  "ae2:spatial_pylon",
+  "ae2:spatial_io_port",
+  "ae2:spatial_anchor",
 ];
 
 let jeiDyeDepotItems = ["present", "trapped_present", "candle_holder", "flag"];
