@@ -1,12 +1,8 @@
 ServerEvents.recipes((e) => {
   e.custom({
-    type: "starbunclemania:fluid_sourcelink_conversion",
-    inputs: [
-      { fluid: 'tfmg:kerosene', amount: 1000 }
-    ],
-    results: [
-      { tag: 'ars_nouveau:source', amount: 1000 }
-    ],
-    processingTime: 2,
+    type: "starbunclemania:FluidSourcelinkRecipe",
+    id: 'tfmg',
+    fluid: 'kerosene',
+    conversion_ratio: 1.5f,
   });
 });
