@@ -18,9 +18,9 @@ ServerEvents.recipes((event) => {
     "ars_nouveau:source_gem",
   ]);
 
-  event.shapeless("1x endermanoverhaul:ancient_pearl", [
-    "1x minecraft:phantom_membrain",
-    "1x endermanoverhaul:corrupted_pearl",
+  event.shapeless("endermanoverhaul:ancient_pearl", [
+    "minecraft:phantom_membrane",
+    "endermanoverhaul:corrupted_pearl",
   ]);
 
   event.shapeless("ars_nouveau:apprentice_spell_book", [
