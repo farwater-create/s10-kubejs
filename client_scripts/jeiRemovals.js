@@ -14,6 +14,7 @@ let jeiRemovals = [
   "create_connected:copycat_board",
   "create_connected:copycat_box",
   "create_connected:copycat_catwalk",
+  "ae2:tiny_tnt",
 ];
 
 let jeiDyeDepotItems = ["present", "trapped_present", "candle_holder", "flag"];

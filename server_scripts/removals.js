@@ -82,6 +82,7 @@ const recipeRemovals = [
   { output: "create_connected:copycat_board" },
   { output: "create_connected:copycat_box" },
   { output: "create_connected:copycat_catwalk" },
+  { output: "ae2:tiny_tnt" },
 ];
 
 const dyeDepotItems = ["present", "trapped_present", "candle_holder", "flag"];
