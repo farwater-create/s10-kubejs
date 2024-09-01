@@ -59,19 +59,4 @@ ServerEvents.recipes((event) => {
     .drill("createoreexcavation:diamond_drill")
     .stress(2048)
     .id("kubejs:tuff_extraction");
-
-  event.recipes.createoreexcavation
-    .vein('{"text": "Bauxite Vein"}', "tfmg:bauxite")
-    .placement(20, 12, 8964561)
-    .alwaysInfinite()
-    .biomeWhitelist("forge:is_overworld")
-    .id("kubejs:bauxite_vein");
-  event.recipes.createoreexcavation
-    .drilling(
-      Item.of("tfmg:bauxite").withChance(0.8),
-      "kubejs:bauxite_vein",
-      1600
-    )
-    .stress(1024)
-    .id("kubejs:bauxite_extraction");
 });
