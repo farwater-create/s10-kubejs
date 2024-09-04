@@ -92,6 +92,7 @@ const recipeRemovals = [
   { output: "ae2:spatial_pylon" },
   { output: "ae2:spatial_io_port" },
   { output: "ae2:spatial_anchor" },
+  { output: "minecraft:air" },
 ];
 
 const dyeDepotItems = ["present", "trapped_present", "candle_holder", "flag"];
