@@ -22,9 +22,5 @@ LootJS.modifiers((event) => {
 	  	Item.of("numismatics:spur").withChance(20),
 	  	Item.of("numismatics:bevel").withChance(10),
 		  Item.of("numismatics:sprocket").withChance(5),
-	  	Item.of("numismatics:cog").withChance(2),
-	  	Item.of("numismatics:crown").withChance(0.5),
-	  	Item.of("numismatics:sun").withChance(0.01),
-	  	]
   	);
 });
