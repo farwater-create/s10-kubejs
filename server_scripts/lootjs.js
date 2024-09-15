@@ -21,6 +21,6 @@ LootJS.modifiers((event) => {
 		  [
 	  	Item.of("numismatics:spur").withChance(20),
 	  	Item.of("numismatics:bevel").withChance(10),
-		  Item.of("numismatics:sprocket").withChance(5),
+		  Item.of("numismatics:sprocket").withChance(5)
   	);
 });
