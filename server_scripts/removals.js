@@ -96,6 +96,7 @@ const recipeRemovals = [
   { output: "minecraft:infested_stone" },
   { input: "advancedperipherals:geo_scanner" },
   { output: "advancedperipherals:geo_scanner" },
+  { output: "advancedperipherals:chunk_controller" },
 ];
 
 const dyeDepotItems = ["present", "trapped_present", "candle_holder", "flag"];
